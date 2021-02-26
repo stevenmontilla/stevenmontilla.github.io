@@ -10,6 +10,8 @@ You can find my Open Source GIS work on this page :)
 ### Projects
 - [Gravity Model of Spatial Interaction](gravity/gravity.md)
 
+### [Blog](blog) 
+
 
 
 
