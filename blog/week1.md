@@ -3,7 +3,7 @@ title: Blog week 1
 layout: default
 ---
 ## What is Open GIScience?
-### Implications for Liberal Arts education and the honor system
+### + thoughts on GIScience in undergraduate education
 ###### March, 03
 
 Open GIScience incorporates the world of geospatial analysis with the world of Free /Open Source software and Open Science. 
