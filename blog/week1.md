@@ -4,7 +4,7 @@ layout: default
 ---
 ## What is Open GIScience?
 ### + thoughts on GIScience in undergraduate education
-###### March, 03
+###### March 1st, 2021
 
 Open GIScience incorporates the world of geospatial analysis with the world of Free /Open Source software and Open Science. 
 A free software is not only accessible to anyone at no cost, but also it allows users to have an active role in its development, modification and distribution. It is free as in it has no cost, but it is also free as in anyone with the ability to do so can modify and redistribute it. On the other hand, open source software is also accessible at no cost and the users 
