@@ -4,6 +4,7 @@ layout: default
 ---
 ## What is Open GIScience?
 ### Implications for Liberal Arts education and the honor system
+###### March, 03
 
 Open GIScience incorporates the world of geospatial analysis with the world of Free /Open Source software and Open Science. 
 A free software is not only accessible to anyone at no cost, but also it allows users to have an active role in its development, modification and distribution. It is free as in it has no cost, but it is also free as in anyone with the ability to do so can modify and redistribute it. On the other hand, open source software is also accessible at no cost and the users 
@@ -29,9 +30,4 @@ into our own analyses.
 3. Singleton, A. D., S. Spielman, and C. Brunsdon. 2016. Establishing a framework for Open Geographic Information science. International Journal of Geographical Information Science 30 (8):1507–1521. http://dx.doi.org/10.1080/13658816.2015.1137579
 
 
-
-
-#### _References_
-1. Rey, S. J. 2009. Show me the code: spatial analysis and open source.Journal of Geographical Systems 11 (2):191–207. http://dx.doi.org/10.1007/s10109-009-0086-8
-3. Singleton, A. D., S. Spielman, and C. Brunsdon. 2016. Establishing a framework for Open Geographic Information science. International Journal of Geographical Information Science 30 (8):1507–1521. http://dx.doi.org/10.1080/13658816.2015.1137579
 
