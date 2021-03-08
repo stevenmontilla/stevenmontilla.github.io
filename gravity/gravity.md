@@ -39,8 +39,7 @@ my gravity model. Generally, there is agreement on the catchment areas, but ther
 according to the Dartmouth Atlas documentation.
 
 ### Data sources and References
-- [Homeland Security Data]( found [here](https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Hospitals_1/FeatureServer)
-
+- [Homeland Security Data](https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Hospitals_1/FeatureServer) 
 - [Dartmouth Hospital Service Areas](https://atlasdata.dartmouth.edu/downloads/supplemental#boundaries)
 
 Dartmouth Atlas User Agreement:
