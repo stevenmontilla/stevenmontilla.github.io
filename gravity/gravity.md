@@ -3,7 +3,7 @@ layout: page
 title: Gravity Model of Spatial Interaction
 ---
 
-### Model 1: [Gravity Model of Spatial Interaction](C:\github\stevenmontilla.github.io\gravity\models/GravityModel.model3):
+### Model 1: [Gravity Model of Spatial Interaction](models/GravityModel.model3):
 This model calculates spatial interaction catchments using the gravity model of spatial interaction.
 Catchments are calculated by measuring the maximum potential for interaction between an input feature
 and a target feature. The model takes into account three factors that can be customized: attractiveness of target
@@ -13,7 +13,7 @@ features (α), friction of distance (β) and emissivity of input features (λ). 
 
 ![Gravity Model](assets/GravityModelofSpatialInteraction.png)
 
-### Model 2: [Preprocessing of target feature layer for Gravity Model](C:\github\stevenmontilla.github.io\gravity\models/targetFt.model3).
+### Model 2: [Preprocessing of target feature layer for Gravity Model](models/targetFt.model3).
 
 This model takes in the target and input features to be used in the Gravity Model of Spatial Interaction to be preprocessed.
 All target features found within the same input feature are aggregated and summarized into a centroid (calculated from dissolved target features).
@@ -21,7 +21,7 @@ The output is a target layer is a filtered version of the target features that c
 
 ![Target Features Preprocessing](assets/Preprocessing of Target Features for Gravity Model.png)
 
-### Model 3 [Preprocessing Model of Homeland Security Hospital data](C:\github\stevenmontilla.github.io\gravity\models/Homeland.model3):
+### Model 3 [Preprocessing Model of Homeland Security Hospital data](models/Homeland.model3):
 The only purpose of this model is to prepare Homeland Security Hospital Data to exclude military, psychiatric, closed hospitals and null weights
 features with the following expression: "TYPE" != 'MILITARY' AND "TYPE" != 'PSYCHIATRIC' AND "BEDS" > 0 AND "STATUS" = 'OPEN'.
  This model is specifically design for the Homeland Security Hospital data
