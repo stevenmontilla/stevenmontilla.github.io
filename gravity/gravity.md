@@ -39,8 +39,9 @@ my gravity model. Generally, there is agreement on the catchment areas, but ther
 according to the Dartmouth Atlas documentation.
 
 ### Data sources and References
-- [Homeland Security Data](https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Hospitals_1/FeatureServer) 
+- [Homeland Security Data](https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Hospitals_1/FeatureServer)
 - [Dartmouth Hospital Service Areas](https://atlasdata.dartmouth.edu/downloads/supplemental#boundaries)
+- New Englands Towns with Population data from American Community Survey 2018 5-year Average put together by Prof. Joseph Holler. Geopackage can be found [here](C:\github\stevenmontilla.github.io\gravity/newton.gpkg)
 
 Dartmouth Atlas User Agreement:
   - _The data set forth at [this map](assets/) of publication/press release was obtained from Dartmouth Atlas Data website, which was funded by the Robert Wood Johnson Foundation, The Dartmouth Clinical and Translational Science Institute, under award number UL1TR001086 from the National Center for Advancing Translational Sciences (NCATS) of the National Institutes of Health (NIH), and in part, by the National Institute of Aging, under award number U01 AG046830."_
