@@ -13,7 +13,7 @@ features (α), friction of distance (β) and emissivity of input features (λ). 
 
 ![Gravity Model](assets/GravityModelofSpatialInteraction.png)
 
-### Model 2: [Preprocessing of target feature layer for Gravity Model](models/targetFt.model3).
+### Model 2: [Preprocessing of target feature layer for Gravity Model](models/TargetFt.model3).
 
 This model takes in the target and input features to be used in the Gravity Model of Spatial Interaction to be preprocessed.
 All target features found within the same input feature are aggregated and summarized into a centroid (calculated from dissolved target features).
