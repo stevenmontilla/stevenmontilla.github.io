@@ -2,7 +2,7 @@
 title: Blog week 1
 layout: default
 ---
-[Return to main page](index.md)
+[Return to main page](stevenmontilla.github.io)
 ## What is Open GIScience?
 ### + thoughts on GIScience in undergraduate education
 ###### March 1st, 2021

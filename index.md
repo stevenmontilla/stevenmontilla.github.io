@@ -7,7 +7,7 @@ layout: default
 Hi, I am Steven, a third year student of Geography and Environmental Studies at Middlebury College!
 You can find my Open Source GIS work on this page :)
 
-####_Check out my Remote Sensing and cartography [portfolio](https://wmontillamorantes.myportfolio.com/)_
+####_ Check out my Remote Sensing and cartography [portfolio](https://wmontillamorantes.myportfolio.com/)_
 
 ### Projects
 - [Gravity Model of Spatial Interaction](gravity/gravity.md)
