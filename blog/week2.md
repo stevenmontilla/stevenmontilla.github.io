@@ -2,7 +2,7 @@
 title: Blog week 2
 layout: default
 ---
-[Return to main page](stevenmontilla.github.io)
+[Return to main page](https://stevenmontilla.github.io)
 ## GIS as a science, a tool and toolmaking
 #### -Which category of “GIS as Science” most applies to the work you have done so far in this course or other courses using GIS? Do those forms of GIS count as “science”?
 #### -How can open source GIS contribute to solving problems of the reproducibility crisis?
