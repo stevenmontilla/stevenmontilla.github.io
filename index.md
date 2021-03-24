@@ -10,7 +10,7 @@ You can find my Open Source GIS work on this page :)
 _Check out my Remote Sensing and cartography [portfolio](https://wmontillamorantes.myportfolio.com/)_
 
 ### Projects
-- [Gravity Model of Spatial Interaction](gravity/gravity.md
+- [Gravity Model of Spatial Interaction](gravity/gravity.md)
 - [Replication of Kasprak et al. (2016)](rosgen/rosgen.md)
 
 ### Blog
