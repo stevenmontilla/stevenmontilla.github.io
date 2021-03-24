@@ -14,4 +14,4 @@ As a class, we replicated the Rosgen classification portion of the Kasprak et al
 1. Sites at the Middle Fork John Day Basin:
   CHaMP sites
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Rc7oAcpV40ObhpqBL5rkR7S0E4zXn2K2" width="640" height="480"></iframe>
-![John Day Elevation](RE-rosgen\results\maps\JohnDay_ref.png)
+![John Day Elevation](rosgen\assets\results\maps\JohnDay_ref.png)
