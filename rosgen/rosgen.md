@@ -68,6 +68,6 @@ Rosgen schema with highlighted categories.
 
 
 ![Elevation](results\maps\ShadedElevation.png)
-![Slope](results\maps\slopeGranite.png)
+![Slope](results\maps\SlopeGranite.png)
 ![Stream Lines](results\maps\streamLines.png)
 ![Valley Lines](results\maps\valleylines.png)
