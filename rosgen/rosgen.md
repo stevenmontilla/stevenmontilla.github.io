@@ -41,12 +41,13 @@ The Columbia Habitat Monitoring Program (CHaMP) observed 26 watersheds in the Co
 - The Kasprak et al. (2016) paper can be found [here]( https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0150293)
 
 Kasprak et al. (2016) followed the Rosgen Classification System (RCS) on Level I and II (Fig. 1) to generate the classifications. They used DEMs (0.1m grid resolution), aerial imagery (1m res), and ground-based assessments to calculate the ratios needed in Level I. In their case, they used the used the River Bathymetry (RBT) to calculate width to depth and entrenchment and sinuosity. Moreover, they processed elevation models using the CHaMP Topo Toolbar. They relied on the CHaMP surveys to inform median grain size (D50) at each point and classify each reach to Level II in the RCS.
+![Rosgen Schema](procedure\protocols\rosgen_level2.jpg)
+Figure 1. Rosgen Classification System.
 
 #### Replication
-
   Each student in our class was randomly assigned one of the 33 CHaMP points to replicate the RCS classification. I was assigned Loc_ID 8, Granite Boulder Creek.
 
-- Sites at the Middle Fork John Day Basin:
+- CHaMP sites at the Middle Fork John Day Basin:
     _My assigned site is highlighted in blue._
     -_You can see different information collected by the CHaMP surveys by clicking on a site of interest._
     -_This layer can be found on the data repository linked above._
