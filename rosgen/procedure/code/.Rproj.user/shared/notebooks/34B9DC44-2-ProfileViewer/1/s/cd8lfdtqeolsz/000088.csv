@@ -1,0 +1,5 @@
+"0",""
+"0","# Now we want to figure out the width of the flood-prone area."
+"0","DpthBf_Max <- 1.3875 # Insert the maximum bankfull depth from your point/reach of interest here, replacing the 8 left of the hash #"
+"0",""
+"0","CrossProf[which.min(CrossProf$Elevation),] # This finds the minimum elevation, which should correspond to the lowest elevation in the stream channel, and reports the entire row. That part is essential! Double check the reported value with one of the plots you have made before to verify."

@@ -1,0 +1,4 @@
+"0","#The purpose of this chunk is to process our data for entry into the Rosgen Stream Classification scheme. This chunk can be run now, or it can be run during the Classification handout. The chunk reports the mean slope and gives you the necessary tools to determine the flood-prone area of the stream to calculate the entrenchment ratio."
+"0","LongProf %>%"
+"0","  #group_by(Attempt) %>% "
+"0","  summarize(Slope = mean(Slope, na.rm = TRUE)) #This calculates the mean slope, based on the Attempt."

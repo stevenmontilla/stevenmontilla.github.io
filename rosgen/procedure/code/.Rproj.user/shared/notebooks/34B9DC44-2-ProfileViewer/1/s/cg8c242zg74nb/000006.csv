@@ -1,0 +1,6 @@
+"0","# The purpose of this chunk is to visualize our datasets using the ggplot2 package.This chunk is set up so that your variables do not need to be specified and the chunk can just be run."
+"0",""
+"0","ggplot(LongProf) + # This sets the variable (data frame) we will be plotting."
+"0","       aes(x = Distance, y = Elevation, color = Elevation) + # This provides the axes designations and how to color the data."
+"0","       geom_line() + # This tells ggplot2 to make a line graph. geom_line could be changed to geom_point without issue."
+"0","       labs(x = ""Distance along the transect (m)"", y = ""Elevation (masl)"", title = ""Longitudinal Profile of Extracted Reach"")"

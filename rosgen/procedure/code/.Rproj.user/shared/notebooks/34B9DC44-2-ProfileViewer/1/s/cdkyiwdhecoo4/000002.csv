@@ -1,0 +1,3 @@
+"0","# The purpose of this chunk is to load the necessary data, and is designed to input text files created by the r.profile tool in GRASS"
+"0","CrossProf <- read.csv(""../../data/derived/public/crossprof.txt"", header=FALSE, sep = "" "", col.names=c(""Junk"",""Distance"",""Elevation""))[c(2,3)]"
+"0","LongProf <- read.csv(""../../data/derived/public/longprof2.txt"", header=FALSE, sep = "" "", col.names=c(""Junk"",""Distance"",""Elevation""))[c(2,3)]"

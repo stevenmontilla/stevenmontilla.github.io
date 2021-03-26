@@ -12,6 +12,16 @@ As a class, we replicated the Rosgen classification portion of the Kasprak et al
 ### Original Study Information
 1. The Kasprak et al. paper can be found [here]( https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0150293)
 1. Sites at the Middle Fork John Day Basin:
+    _My assigned site is highlighted in blue._
   CHaMP sites
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Rc7oAcpV40ObhpqBL5rkR7S0E4zXn2K2" width="640" height="480"></iframe>
-![John Day Elevation](assets\results\maps\JohnDay_ref.png)
+1. Site Elevation
+
+<img src="results\maps\JohnDay_ref.png" width=300 align=right>
+
+![John Day Elevation](results\maps\JohnDay_ref.png)
+
+### Motivations
+1. Coming up with a classification schema for rivers and streams is a hard task. The everchanging nature of these systems as well as the practicality to take measurements on the field are limitations to river classification. The various classifications methods available may also produce different results, so Kasprak et al. (2016) were motivated to conduct a direct comparison between 4 different classification frameworks to analyze their agreements and discrepancies Kasprak et al. (2016).
+
+### Methods

@@ -1,0 +1,3 @@
+"0","# The purpose of this chunk is to load the necessary packages."
+"0","require(ggplot2) #This package is for data visualization."
+"0","require(dplyr) #This package allows users to run sequential commands to manipulate and process your data."

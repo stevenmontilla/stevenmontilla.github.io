@@ -1,0 +1,7 @@
+"0",""
+"0","ggplot(LongProf) +"
+"0","       aes(x = Distance, y = Elevation, color = Slope) +"
+"0","       geom_line(size = 2) + # The ""size"" argument allows us to increase or decrease our point size."
+"0","       scale_color_gradient(low = ""gray"", high = ""red"") +"
+"0","       theme_light() +"
+"0","       labs(x = ""Distance along the transect (m)"", y = ""Elevation (masl)"", title = ""Longitudinal Profile of Extracted Reach"")"

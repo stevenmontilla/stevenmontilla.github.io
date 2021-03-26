@@ -1,0 +1,3 @@
+"0","#run this codeblock if the Longitudinal profile looked backwards, then rerun the graphing codeblock above"
+"0","maxd <- max(LongProf$Distance, na.rm=TRUE) #finds maximum distance"
+"0","LongProf$Distance <- maxd-LongProf$Distance  #inverts distance axis by subtracting distances from max"
