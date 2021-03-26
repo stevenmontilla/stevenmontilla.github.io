@@ -53,3 +53,21 @@ Figure 1. Rosgen Classification System.
     -_This layer can be found on the data repository linked above._
   CHaMP sites
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Rc7oAcpV40ObhpqBL5rkR7S0E4zXn2K2" width="640" height="480"></iframe>
+
+#### Processing of Raster Data
+
+#### Digitizing of River Banks and Valley width
+
+#### Calculation on ratios
+
+
+
+### Results
+
+Rosgen schema with highlighted categories.
+
+
+![Elevation](results\maps\ShadedElevation.png)
+![Slope](results\maps\slopeGranite.png)
+![Stream Lines](results\maps\streamLines.png)
+![Valley Lines](results\maps\valleylines.png)
