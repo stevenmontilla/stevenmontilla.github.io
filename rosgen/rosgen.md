@@ -55,10 +55,23 @@ Figure 1. Rosgen Classification System.
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Rc7oAcpV40ObhpqBL5rkR7S0E4zXn2K2" width="640" height="480"></iframe>
 
 #### Processing of Raster Data
+##### Step by step protocols can be found [here](procedure\protocols\1-Research_Protocol_GRASS.pdf)
 
-Raster Lidar data was processed using [this model] to visualize slope and elevation.
+Raster Lidar data was processed using **[this model](procedure\code\visualize.gxm)** to visualize elevation (Fig. 3) and % slope (Fig. 4) following the workflow seen in Fig 2. Note that the rasters were reclassified and colorized in QGIS to provide more contrast within the study site.  
+
+![visualize workflow](docs\instruction\instructor_materials\visualize_model.png)
+Fig 3. Shaded elevation model
+
+![Elevation](results\maps\ShadedElevation.png)
+Fig 3. Shaded elevation model
+
+![Slope](results\maps\SlopeGranite.png)
+Fig 4. %Slope model
+
 
 #### Digitizing of River Banks and Valley width
+
+Having the
 
 #### Calculation on ratios
 
@@ -67,15 +80,18 @@ Raster Lidar data was processed using [this model] to visualize slope and elevat
 ### Results
 
 
-![Elevation](results\figures\rosgen_classification.jpg)
-Fig.2 Rosgen schema with highlighted categories.
-![Elevation](results\maps\ShadedElevation.png)
-Fig 3. Shaded elevation model
-![Slope](results\maps\SlopeGranite.png)
-Fig 4. %Slope model
+
+
 ![Stream Lines](results\maps\streamLines.png)
-Fig 5. Stream centerline average and uncertainty
+Fig 4. Stream centerline average and uncertainty
 ![Valley Lines](results\maps\valleylines.png)
 Fig 5. Valley centerline average and uncertainty
+
+
+
+
+
+![Elevation](results\figures\rosgen_classification.jpg)
+Fig.6 Rosgen schema with highlighted categories.
 
 ### Conclusions
