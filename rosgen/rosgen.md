@@ -65,7 +65,7 @@ Figure 1. Rosgen Classification System.
 ### Results
 
 Rosgen schema with highlighted categories.
-
+![Elevation](results\figures\rosgen_classification.png)
 
 ![Elevation](results\maps\ShadedElevation.png)
 ![Slope](results\maps\SlopeGranite.png)
