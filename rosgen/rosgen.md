@@ -56,6 +56,8 @@ Figure 1. Rosgen Classification System.
 
 #### Processing of Raster Data
 
+Raster Lidar data was processed using [this model] to visualize slope and elevation.
+
 #### Digitizing of River Banks and Valley width
 
 #### Calculation on ratios
@@ -64,10 +66,16 @@ Figure 1. Rosgen Classification System.
 
 ### Results
 
-Rosgen schema with highlighted categories.
-![Elevation](results\figures\rosgen_classification.png)
 
+![Elevation](results\figures\rosgen_classification.png)
+Fig.2 Rosgen schema with highlighted categories.
 ![Elevation](results\maps\ShadedElevation.png)
+Fig 3. Shaded elevation model
 ![Slope](results\maps\SlopeGranite.png)
+Fig 4. %Slope model
 ![Stream Lines](results\maps\streamLines.png)
+Fig 5. Stream centerline average and uncertainty
 ![Valley Lines](results\maps\valleylines.png)
+Fig 5. Valley centerline average and uncertainty
+
+### Conclusions
