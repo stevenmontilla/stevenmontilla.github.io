@@ -67,7 +67,7 @@ Raster Lidar data was processed using [this model] to visualize slope and elevat
 ### Results
 
 
-![Elevation](results\figures\rosgen_classification.png)
+![Elevation](results\figures\rosgen_classification.jpg)
 Fig.2 Rosgen schema with highlighted categories.
 ![Elevation](results\maps\ShadedElevation.png)
 Fig 3. Shaded elevation model
