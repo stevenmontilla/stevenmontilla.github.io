@@ -57,7 +57,7 @@ Figure 1. Rosgen Classification System.
 #### Processing of Raster Data
 ##### Step by step protocols can be found [here](procedure\protocols\1-Research_Protocol_GRASS.pdf)
 
-Raster Lidar data was processed using **[this model](procedure\code\visualize.gxm)** to visualize elevation (Fig. 3) and % slope (Fig. 4) following the workflow seen in Fig 2. Note that the rasters were reclassified and colorized in QGIS to provide more contrast within the study site.  
+Raster Lidar data was processed using **[this model](procedure\code\visualize.gxm)** to visualize elevation (Fig. 3) and % slope (Fig. 4) following the workflow seen in Fig 2. Note that the rasters were reclassified and colorized in QGIS to provide more contrast within the study site. This model also produces a buffer with a radius of 20 channel widths, which will serve as our area of interest.
 
 ![visualize workflow](docs\instruction\instructor_materials\visualize_model.png)
 Fig 3. Shaded elevation model
@@ -71,7 +71,9 @@ Fig 4. %Slope model
 
 #### Digitizing of River Banks and Valley width
 
- Using the elevation and slope models, I digitized the bankfull channel and valley channel. This process was done three times, alternating between digitizing the bank and the valley to reduce the impact of muscle memory. Centerlines were calculated from these digitization, which then were averaged into a mean stream bank centerline (Fig. 5) and a mean valley centerline (Fig. 6)
+  I digitized the bankfull channel and valley channel using the elevation and slope models at a scale of 1:1500. This process was done three times, alternating between digitizing the bank and the valley to reduce the impact of muscle memory. Centerlines were calculated from each set of channel lines, which then were averaged into a mean stream bank centerline (Fig. 5) and a mean valley centerline (Fig. 6) using **[this model](procedure\code\center_line_length.gxm)**.
+##### small deviation
+In my case, I re-digitized the channels after noticing that my digitization was very well off the real course of the river using Google Earth Pro to look at imagery from 2007 (the closest to the date of data collection of CHaMP data - 2012). The second digitization yielded more similar results to the Kasprak et al.(2016) classification.  
 
  ![Stream Lines](results\maps\streamLines.png)
  Fig 5. Stream centerline average and uncertainty
