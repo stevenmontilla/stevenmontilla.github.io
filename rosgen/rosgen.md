@@ -88,7 +88,8 @@ Table 1. Site Measurements
 | Variable                                  | Value      | Source                     |
 |-------------------------------------------|------------|----------------------------|
 |               Bankfull Width              |    5.932   |   CHAMPS attribute table   |
-| Bankfull Depth                            | 0.2426     | CHAMPS attribute table     |
+| Bankfull Depth (mean)                     | 0.2426     | CHAMPS attribute table     |
+| Bankfull Depth (max)                      | 1.0406     | CHAMPS attribute table     |
 | Valley Width                              | 105        | crossectional profile      |
 | Valley Depth                              | 2.0812     | 2 * bankfull depth (max)   |
 | Stream/River Length                       | 124.217654 | banksLine attribute table  |
