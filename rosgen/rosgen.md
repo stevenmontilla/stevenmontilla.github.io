@@ -72,25 +72,57 @@ Fig 4. %Slope model
 #### Digitizing of River Banks and Valley width
 
  Using the elevation and slope models, I digitized the bankfull channel and valley channel. This process was done three times, alternating between digitizing the bank and the valley to reduce the impact of muscle memory. Centerlines were calculated from these digitization, which then were averaged into a mean stream bank centerline (Fig. 5) and a mean valley centerline (Fig. 6)
+
+ ![Stream Lines](results\maps\streamLines.png)
+ Fig 5. Stream centerline average and uncertainty
+
+ ![Valley Lines](results\maps\valleylines.png)
+ Fig 6. Valley centerline average and uncertainty
+
 #### Calculation on ratios
+According to the Rosgen classification schema, in order to classify a stream you need the
+entrenchment ratio, width to depth ration and the sinuosity. The following table summarizes where the data to calculate these ratios came from.
 
-
+Table 1. Site Measurements
+| Variable | Value | Source |
+| :-: | :-: | :-: |
+| Bankfull Width | 5.932 | CHAMPS attribute table |
+| Bankfull Depth | 0.2426| CHAMPS attribute table |
+| Valley Width | 105|crossectional profile |
+| Valley Depth | 2.0812 | 2 * bankfull depth (max)|
+| Stream/River Length | 124.217654 | banksLine attribute table|
+| Valley Length |128.759278 |valleyLine attribute table |
+| Median Channel Material Particle Diameter |67 | CHAMPS attribute table|
 
 ### Results
+The following tables and figure summarize the results. Essentially, the Granite Boulder Creek was classified as stream type **C4b**
 
+Table 2. Rosgen Level I Classification
+| Criteria | Value |
+| :-: | :-: |
+| Entrenchment Ratio | 17.70060688 |
+| Width / Depth Ratio | 24.45177246 |
+| Sinuosity | 1.164727792 |
+| Level I Stream Type | **C** |
 
-
-
-![Stream Lines](results\maps\streamLines.png)
-Fig 5. Stream centerline average and uncertainty
-![Valley Lines](results\maps\valleylines.png)
-Fig 6. Valley centerline average and uncertainty
-
-
-
-
+Table 3. Rosgen Level II Classification
+| Criteria | Value |
+| :-: | :-: |
+| Slope | 0.03205 |
+| Channel Material | Gravel |
+| Level II Stream Type |**C4b**|
 
 ![Elevation](results\figures\rosgen_classification.jpg)
 Fig.6 Rosgen schema with highlighted categories.
+
+
+
+
+
+
+
+
+
+
 
 ### Conclusions
