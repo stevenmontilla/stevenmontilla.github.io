@@ -84,6 +84,7 @@ According to the Rosgen classification schema, in order to classify a stream you
 entrenchment ratio, width to depth ration and the sinuosity. The following table summarizes where the data to calculate these ratios came from.
 
 Table 1. Site Measurements
+
 | Variable                                  | Value      | Source                     |
 |-------------------------------------------|------------|----------------------------|
 |               Bankfull Width              |    5.932   |   CHAMPS attribute table   |
@@ -98,6 +99,7 @@ Table 1. Site Measurements
 The following tables and figure summarize the results. Essentially, the Granite Boulder Creek was classified as stream type **C4b**
 
 Table 2. Rosgen Level I Classification
+
 |       Criteria      |    Value    |
 |:-------------------:|:-----------:|
 |  Entrenchment Ratio | 17.70060688 |
@@ -106,6 +108,7 @@ Table 2. Rosgen Level I Classification
 | Level I Stream Type |    **C**    |
 
 Table 3. Rosgen Level II Classification
+
 |       Criteria       |  Value  |
 |:--------------------:|:-------:|
 |         Slope        | 0.03205 |
