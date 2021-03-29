@@ -84,33 +84,33 @@ According to the Rosgen classification schema, in order to classify a stream you
 entrenchment ratio, width to depth ration and the sinuosity. The following table summarizes where the data to calculate these ratios came from.
 
 Table 1. Site Measurements
-| Variable | Value | Source |
-| :-: | :-: | :-: |
-| Bankfull Width | 5.932 | CHAMPS attribute table |
-| Bankfull Depth | 0.2426| CHAMPS attribute table |
-| Valley Width | 105|crossectional profile |
-| Valley Depth | 2.0812 | 2 * bankfull depth (max)|
-| Stream/River Length | 124.217654 | banksLine attribute table|
-| Valley Length |128.759278 |valleyLine attribute table |
-| Median Channel Material Particle Diameter |67 | CHAMPS attribute table|
+| Variable                                  | Value      | Source                     |
+|-------------------------------------------|------------|----------------------------|
+|               Bankfull Width              |    5.932   |   CHAMPS attribute table   |
+| Bankfull Depth                            | 0.2426     | CHAMPS attribute table     |
+| Valley Width                              | 105        | crossectional profile      |
+| Valley Depth                              | 2.0812     | 2 * bankfull depth (max)   |
+| Stream/River Length                       | 124.217654 | banksLine attribute table  |
+| Valley Length                             | 128.759278 | valleyLine attribute table |
+| Median Channel Material Particle Diameter | 67         | CHAMPS attribute table     |
 
 ### Results
 The following tables and figure summarize the results. Essentially, the Granite Boulder Creek was classified as stream type **C4b**
 
 Table 2. Rosgen Level I Classification
-| Criteria | Value |
-| :-: | :-: |
-| Entrenchment Ratio | 17.70060688 |
+|       Criteria      |    Value    |
+|:-------------------:|:-----------:|
+|  Entrenchment Ratio | 17.70060688 |
 | Width / Depth Ratio | 24.45177246 |
-| Sinuosity | 1.164727792 |
-| Level I Stream Type | **C** |
+|      Sinuosity      | 1.164727792 |
+| Level I Stream Type |    **C**    |
 
 Table 3. Rosgen Level II Classification
-| Criteria | Value |
-| :-: | :-: |
-| Slope | 0.03205 |
-| Channel Material | Gravel |
-| Level II Stream Type |**C4b**|
+|       Criteria       |  Value  |
+|:--------------------:|:-------:|
+|         Slope        | 0.03205 |
+|   Channel Material   |  Gravel |
+| Level II Stream Type | **C4b** |
 
 ![Elevation](results\figures\rosgen_classification.jpg)
 Fig.6 Rosgen schema with highlighted categories.
