@@ -71,8 +71,7 @@ Fig 4. %Slope model
 
 #### Digitizing of River Banks and Valley width
 
-Having the
-
+ Using the elevation and slope models, I digitized the bankfull channel and valley channel. This process was done three times, alternating between digitizing the bank and the valley to reduce the impact of muscle memory. Centerlines were calculated from these digitization, which then were averaged into a mean stream bank centerline (Fig. 5) and a mean valley centerline (Fig. 6)
 #### Calculation on ratios
 
 
@@ -83,9 +82,9 @@ Having the
 
 
 ![Stream Lines](results\maps\streamLines.png)
-Fig 4. Stream centerline average and uncertainty
+Fig 5. Stream centerline average and uncertainty
 ![Valley Lines](results\maps\valleylines.png)
-Fig 5. Valley centerline average and uncertainty
+Fig 6. Valley centerline average and uncertainty
 
 
 
