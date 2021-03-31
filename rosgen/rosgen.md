@@ -121,7 +121,9 @@ Table 3. Rosgen Level II Classification
 ![Elevation](results\figures\rosgen_classification.jpg)
 Fig.6 Rosgen schema with highlighted categories.
 
+### Discussion
 
+The Boulder Granite Creek at this site was classified as a C4b stream which is in agreement to Kasprak's classification (Kasprak et al, 2016). As seen in Table 2 and Figure 6, all the entrenchment and width to depth ratios fell within the ranges established by the Rosgen key. I calculated a sinuosity value of 1.16 that falls short of the > 1.2 required for the **C** stream type. However, for  the sinuosity value, the Rosgen classification specifies that entrenchment and sinuosity can vary by +/- 0.2 units. Taking this factor into account would bring my sinuosity value to 1.18 which could be rounded to 1.2, marginally less than the > 1.2 required to be classified as a stream type C. I decided to still go through with classifying this stream as type **C** because the small margin could be accounted for by errors in digitization that could result in lower sinuosity values. Moreover, the Rosgen key does not provide any alternatives for  a sinuosity lower than 1.2 with the values for width to depth and entrenchment ratios shown in table 2. 
 
 
 
