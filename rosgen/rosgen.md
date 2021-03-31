@@ -75,23 +75,19 @@ Fig 4. %Slope model
 ##### small deviation
 In my case, I re-digitized the channels after noticing that my digitization was very well off the real course of the river using Google Earth Pro to look at imagery from 2007 (the closest to the date of data collection of CHaMP data - 2012). The second digitization yielded more similar results to the Kasprak et al.(2016) classification.  
 
-
-| ![Stream Lines](results\maps\streamLines.png)  |  ![Valley Lines](results\maps\valleylines.png)  |
-|Fig 5. Stream centerline average and uncertainty| Fig 6. Valley centerline average and uncertainty|
-
  ![Stream Lines](results\maps\streamLines.png)
  Fig 5. Stream centerline average and uncertainty
 
  ![Valley Lines](results\maps\valleylines.png)
  Fig 6. Valley centerline average and uncertainty
 
-![Longitudinal Profile](results\maps\LongitudinalProfileGraph.png)
+![Longitudinal Profile](results\figures\LongitudinalProfileGraph.png)
  Fig 7. Longitudinal Profile
 
-![cross-sectional](results\maps\crossectionalprofileZoomOut.png)
+![cross-sectional](results\figures\crossectionalprofileZoomOut.png)
  Figure 8. cross-sectional profile of Valley near CHaMP Loc_ID 08  
 
- ![cross-sectional zoomed in](results\maps\crossectionalprofileZoomIn.png)
+ ![cross-sectional zoomed in](results\figures\crossectionalprofileZoomIn.png)
  Figure 8. cross-sectional profile of banks near CHaMP Loc_ID 08  
 
 #### Calculation on ratios
