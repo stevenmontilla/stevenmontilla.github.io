@@ -214,7 +214,9 @@ UPDATE homes_joined
 	WHERE "risk" = 0 AND "vulnerable" = 0;
 
 ```
-Now we join this field to the wards layer. However, we must fix the CRS of the wards layer before joining the field.
+At this point, the homes_joined layer is very useful as it shows the vulnerability of each building - information that could be useful for families in case they want to know the risk status of their homes. However, this data set is extremely heavy, and it is not publishable on leaflet. Therefore, it must be aggregated into wards, a coarser level of organization. This aggregation may also produce other valuable insights that could be used by authorities to target contingency plans or allocate more resources depending on the degree of vulnerability of the home infrastructure per ward.
+
+To aggregate into wards, we first join the "danger" field to the wards layer. However, we must fix the CRS of the wards layer beforehand.
 
 ```sql
 
@@ -228,7 +230,7 @@ DROP COLUMN geom;
 ```
 Now, we need to aggregate the homes layer information to the ward layer. However, the homes layer does not have a ward attribute which makes it impossible to group by each ward. Therefore, we need to create a new attribute for each home with the name of the ward it is in. This will allow us to perform summaries using the group by statement.
 
-This script adds the ward name to each home.
+This script adds the respective ward name to each home.
 
 ```sql
 CREATE TABLE homes_ward
@@ -356,9 +358,12 @@ UPDATE wards
 SET pop_density = totalpop / area_km2;
 ```
 
-### Results
+### Results and Interpretation
+  This analysis attempted to
+
+
   [Check this interactive map](assets\map1\index.html) showing the percentage of homes with unknown risk.
 
-  ![map1](assets\risk_piecharts.png)
+  ![map1](assets\risk_piecharts_corrected.png)
   Interpretation
   Link to leaflet map and static maps
