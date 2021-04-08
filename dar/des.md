@@ -12,8 +12,6 @@ Revised: `7 April 2021`
 
 What proportion of homes are highly vulnerable to flooding based on building materials and location relative to flood zones?
 
-### Data & data citations & descriptions
-
 ### Methods
 
   First off, a general building layer is extracted from OSM with our desired attributes. Note that the geometry has to be casted onto the features. This is important because spatial queries will be executed later on.
@@ -363,11 +361,27 @@ SET pop_density = totalpop / area_km2;
   As shown in the interactive map, very few homes were classified by this methodology as high risk - 42 out of 1312210 homes analyzed to be exact. Likewise, none were deemed at very high risk. As expected, homes at medium and high risk concentrated in wards that are along the flood areas and that have high population densities (Figure 2.).
 
   Since the flood areas do seem to cover a considerable amount of homes from observation, it is very likely that these low numbers are an artifact of the data and methodology. Primarily, the data for building materials was not consistent with throughout the whole dataset; in fact, less than 5% of the buildings had a value other than null for this attribute. Moreover, the OSM building layer did not classify residential buildings consistently either, which lead us to assume that all buildings with an attribute of "yes" were residential.
-  Moreover, for unknown building
 
+  In general, this analysis could be more useful and effective using other attributes as indicators for vulnerability that may be more consistently reported. Nonetheless, these rough maps do provide a sense of the areas where people may be more vulnerable to floods. Moreover, given that this analysis can be done to the household level, it could be a powerful way for local authorities, first responders, aid agencies to keep a data base of the physical buildings that may be more propense to damage in different flooding scenarios.  
 
   [Check this interactive map](assets\qgis2web_2021_04_08-02_10_21_370886\index.html) showing all the homes at high risk over the population density per ward.
-  _note: for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features_ ![THIS PICTURE](assets\leaflet_myview.png) _this is how its supposed to look! :(_
+  _note: for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features_ ![THIS PICTURE](assets\leaflet_myview.png) Figure 1.  _this is how its supposed to look! :(_
 
   ![map1](assets\piechartc.png)
+  Figure 2. Risk levels of homes per ward
   _pie charts vary in size according to population density of the ward_
+
+  ### DATA SOURCES
+
+  [Open Street Map](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap): OpenStreetMap is a free, editable map of the whole world that is being built by volunteers largely from scratch and released with an open-content license. (About Open OpenStreetMap linked above)
+          -DATA:  
+            -planet_osm_polygon: From OSM provided by Prof. Joe Holler. _**IMPORTANT**included attribute building:material_
+
+  [Resilience Academy](https://resilienceacademy.ac.tz/about-us/): Resilience Academy is a partnership between four academic institutions in Tanzania: Ardhi University (ARU), University of Dar es Salaam (UDSM), Sokoine University of Agriculture (SUA) and State University of Zanzibar (SUZA) with the University of Turku (UTU) from Finland. It is an initiative of the Tanzania Urban Resilience Program (TURP), a partnership between the Government of Tanzania, the World Bank, and the Foreign, Commonwealth and Development Office (FCDO).(Resilience Academy website linked above)
+    -DATA:
+      -[Dar es Salaam Administrative Wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards)
+      -Dar Es Salaam Flood Scenarion 25-200cm
+
+### Acknowlegments
+
+Thanks to Prof. Joe Holler for the help and putting the lab together and to Maddie Tango and Sanjana Roy for answering my questions and being willing to help!
