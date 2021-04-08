@@ -12,7 +12,7 @@ _Check out my Remote Sensing and cartography [portfolio](https://wmontillamorant
 ### Projects
 - [Gravity Model of Spatial Interaction](gravity/gravity.md)
 - [Replication of Kasprak et al. (2016)](rosgen/rosgen.md)
--[Flood Vulnerability in Dar-es-Salaam](Dar-es-Salaam/dar.md)
+- [Flood Vulnerability in Dar-es-Salaam](dar/dar.md)
 
 ### Blog
 - [Week 1 - What is Open GIScience?](blog/week1.md)
