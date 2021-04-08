@@ -10,6 +10,8 @@ Revised: `7 April 2021`
 
 ### Question
 
+What proportion of homes are at highly vulnerable to flooding based on building materials and location relative to flood zones?
+
 ### Data & data citations & descriptions
 
 ### Methods
@@ -354,8 +356,9 @@ UPDATE wards
 SET pop_density = totalpop / area_km2;
 ```
 
-
-
 ### Results
+  Check this interactive map[dar/assets/map1/index.html] showing the percentage of homes with unknown risk.
+
+  !map1[dar/assets/risk_piecharts.png]
   Interpretation
   Link to leaflet map and static maps
