@@ -360,12 +360,14 @@ SET pop_density = totalpop / area_km2;
 
 ### Results and Interpretation
   This analysis attempted to determine the vulnerability of individual homes and wards to flooding based on two factors: the building materials and the proximity to different flood zones of different flood scenarios. Homes deemed at high risk were built out of non-sturdy materials and were within a flood area of a 25-50 cm scenario. On the other hand, homes deemed at no risk were build with more conventional materials and were not on a flood zone.
-  As shown in the interactive map,
+  As shown in the interactive map, very few homes were classified by this methodology as high risk - 42 out of 1312210 homes analyzed to be exact. Likewise, none were deemed at very high risk. As expected, homes at medium and high risk concentrated in wards that are along the flood areas and that have high population densities (Figure 2.).
+
+  Since the flood areas do seem to cover a considerable amount of homes from observation, it is very likely that these low numbers are an artifact of the data and methodology. Primarily, the data for building materials was not consistent with throughout the whole dataset; in fact, less than 5% of the buildings had a value other than null for this attribute. Moreover, the OSM building layer did not classify residential buildings consistently either, which lead us to assume that all buildings with an attribute of "yes" were residential.
+  Moreover, for unknown building
 
 
-  [Check this interactive map](assets\qgis2web_2021_04_08-02_10_21_370886\index.html) showing the percentage of homes with unknown risk.
-  _note:_ for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features. 
+  [Check this interactive map](assets\qgis2web_2021_04_08-02_10_21_370886\index.html) showing all the homes at high risk over the population density per ward.
+  _note:_ for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features.
 
   ![map1](assets\piechartc.png)
-  Interpretation
-  Link to leaflet map and static maps
+  _pie charts vary in size according to population density of the ward_
