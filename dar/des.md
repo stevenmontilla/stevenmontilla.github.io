@@ -340,20 +340,20 @@ WHERE
 
 UPDATE wards
 SET total_homes = very_high + high + medium + low + unk_nown;
-
-
 ```
-
-
+Finally, we can calculate some statistics
 ```sql
-```
-```sql
+ALTER TABLE wards
+ADD COLUMN area_km2 real;
+UPDATE wards
+SET area_km2 = st_area(wardgeom) * 0.000001;
+
+ALTER TABLE wards
+ADD COLUMN pop_density real;
+UPDATE wards
+SET pop_density = totalpop / area_km2;
 ```
 
-
-
-```sql
-```
 
 
 ### Results
