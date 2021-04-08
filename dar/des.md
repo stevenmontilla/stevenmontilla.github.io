@@ -367,7 +367,7 @@ SET pop_density = totalpop / area_km2;
 
 
   [Check this interactive map](assets\qgis2web_2021_04_08-02_10_21_370886\index.html) showing all the homes at high risk over the population density per ward.
-  _note: for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features_ ![THIS PICTURE](assets\leaflet_myview.png) is how its supposed to look! :(
+  _note: for some reason, the map looks well when I open it in chrome directly from my local file, but when opened through the link above it does not show all the features_ ![THIS PICTURE](assets\leaflet_myview.png) _this is how its supposed to look! :(_
 
   ![map1](assets\piechartc.png)
   _pie charts vary in size according to population density of the ward_
