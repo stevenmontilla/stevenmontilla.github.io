@@ -371,16 +371,16 @@ SET pop_density = totalpop / area_km2;
   Figure 2. Risk levels of homes per ward
   _pie charts vary in size according to population density of the ward_
 
-  ### DATA SOURCES
+### DATA SOURCES
 
   [Open Street Map](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap): OpenStreetMap is a free, editable map of the whole world that is being built by volunteers largely from scratch and released with an open-content license. (About Open OpenStreetMap linked above)
-          -DATA:  
-            -planet_osm_polygon: From OSM provided by Prof. Joe Holler. _**IMPORTANT**included attribute building:material_
+
+  - DATA:  planet_osm_polygon: From OSM provided by Prof. Joe Holler. _**IMPORTANT**: included attribute building:material_
 
   [Resilience Academy](https://resilienceacademy.ac.tz/about-us/): Resilience Academy is a partnership between four academic institutions in Tanzania: Ardhi University (ARU), University of Dar es Salaam (UDSM), Sokoine University of Agriculture (SUA) and State University of Zanzibar (SUZA) with the University of Turku (UTU) from Finland. It is an initiative of the Tanzania Urban Resilience Program (TURP), a partnership between the Government of Tanzania, the World Bank, and the Foreign, Commonwealth and Development Office (FCDO).(Resilience Academy website linked above)
-    -DATA:
-      -[Dar es Salaam Administrative Wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards)
-      -Dar Es Salaam Flood Scenarion 25-200cm
+    - DATA:
+      - [Dar es Salaam Administrative Wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards)
+      - Dar Es Salaam Flood Scenarion 25-200cm
 
 ### Acknowlegments
 
