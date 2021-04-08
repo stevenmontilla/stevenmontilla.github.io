@@ -10,7 +10,7 @@ Revised: `7 April 2021`
 
 ### Question
 
-What proportion of homes are at highly vulnerable to flooding based on building materials and location relative to flood zones?
+What proportion of homes are highly vulnerable to flooding based on building materials and location relative to flood zones?
 
 ### Data & data citations & descriptions
 
@@ -359,11 +359,11 @@ SET pop_density = totalpop / area_km2;
 ```
 
 ### Results and Interpretation
-  This analysis attempted to
+  This analysis attempted to determine the vulnerability of individual homes and wards to flooding based on two factors: the building materials and the proximity to different flood zones of different flood scenarios.
 
 
   [Check this interactive map](assets\map1\index.html) showing the percentage of homes with unknown risk.
 
-  ![map1](assets\risk_piechartc.png)
+  ![map1](assets\piechartc.png)
   Interpretation
   Link to leaflet map and static maps
