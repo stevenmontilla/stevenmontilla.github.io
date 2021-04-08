@@ -87,8 +87,8 @@ In my case, I re-digitized the channels after noticing that my digitization was 
 ![cross-sectional](results\figures\crossectionalprofileZoomOut.png)
  Figure 8. cross-sectional profile of Valley near CHaMP Loc_ID 08  
 
- ![cross-sectional zoomed in](results\figures\crossectionalprofileZoomIn.png)
- Figure 8. cross-sectional profile of banks near CHaMP Loc_ID 08  
+![cross-sectional zoomed in](results\figures\crossectionalprofileZoomIn.png)
+Figure 8. cross-sectional profile of banks near CHaMP Loc_ID 08  
 
 #### Calculation on ratios
 According to the Rosgen classification schema, in order to classify a stream you need the
