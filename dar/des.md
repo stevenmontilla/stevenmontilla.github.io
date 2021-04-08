@@ -12,7 +12,7 @@ Revised: `7 April 2021`
 
 ### Data & data citations & descriptions
 
-### Methods  
+### Methods
 
   First off, a general building layer is extracted from OSM with our desired attributes. Note that the geometry has to be casted onto the features. This is important because spatial queries will be executed later on.
 
