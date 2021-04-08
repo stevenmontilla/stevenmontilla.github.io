@@ -3,8 +3,8 @@ layout: page
 title: Flood Vulnerability in Dar-es-Salaam
 ---
 
-Created: `24 March 2021`
-Revised: `25 March 2021`
+Created: `7  April 2021`
+Revised: `7 April 2021`
 
 #Flood Vulnerability in Dar-es-Salaam
 
@@ -22,7 +22,7 @@ Select building, osm_id, "building:material", way::geometry(polygon,4326) as geo
 FROM public.material_polygon Limit 1500000;
 ```
 
-Now, we extract **homes** layer. To do this we select any building that has any of the attributes listed below. The "yes" attribute may refer to homes, therefore it is included, but should be noted that there is not a 100 percent certainty that buildings with the "yes" attribute are only residential.
+Now, we extract a **homes** layer. To do this we select any building that has any of the attributes listed below. The "yes" attribute may refer to homes, therefore it is included, but should be noted that there is not a 100 percent certainty that buildings with the "yes" attribute are only residential.
 
 ```sql
 CREATE TABLE homes AS
@@ -170,6 +170,111 @@ UPDATE homes_joined
 SET risk = 0
 WHERE risk IS NULL;
 ```
+Based on the material and flood vulnerability, a new "danger" (I know, alarming! However, this is basically risk, but we already used that word :D ) field will be calculated according to the follwowing logic:
+
+```sql
+ALTER TABLE homes_joined
+ADD COLUMN danger text;
+
+UPDATE homes_joined
+SET
+	danger = 'Very high risk'
+WHERE
+	"risk" = 2 AND "vulnerable" = 2;
+
+UPDATE homes_joined
+  SET
+  	danger = 'High risk'
+  WHERE
+  	"risk" = 1 AND "vulnerable" = 2
+    OR
+    "vulnerable" = 1 AND "risk" = 2;
+
+UPDATE homes_joined
+    SET
+    	danger = 'Medium risk'
+    WHERE
+    	"risk" = 1 AND "vulnerable" = 1
+			OR
+			"risk" = 0 AND "vulnerable" = 2
+			OR
+			"risk" = 2 AND "vulnerable" = 0;
+
+UPDATE homes_joined
+  SET danger = 'Low risk'
+      WHERE
+      	"risk" = 0 AND "vulnerable" = 1
+				OR
+				"risk" = 1 AND "vulnerable" = 0;
+
+UPDATE homes_joined
+	SET danger = 'No risk'
+	WHERE "risk" = 0 AND "vulnerable" = 0;
+
+```
+Now we join this field to the wards layer. However, we must fix the CRS of the wards layer before joining the field.
+
+```sql
+
+SELECT addgeometrycolumn('wilmer','wards','wardgeom',32737,'MULTIPOLYGON',2);
+
+UPDATE wards
+SET wardgeom =  ST_Transform(geom, 32737);
+
+ALTER TABLE wards
+DROP COLUMN geom;
+```
+Now, we need to aggregate the homes layer information to the ward layer. However, the homes layer does not have a ward attribute which makes it impossible to group by each ward. Therefore, we need to create a new attribute for each home with the name of the ward it is in. This will allow us to perform summaries using the group by statement.
+
+This script adds the ward name to each home.
+
+```sql
+CREATE TABLE homes_ward
+AS
+SELECT homes_joined.*, wards.ward_name as ward_name, wards.totalpop as ward_pop,
+			 st_multi(st_intersection(homes_joined.homegeom, wards.wardgeom))::geometry(multipolygon,32737) as geom_homes
+FROM homes_joined INNER JOIN wards
+ON st_intersects(homes_joined.homegeom, wards.wardgeom);
+
+ALTER TABLE homes_ward
+DROP COLUMN homegeom;
+```
+Now, we group the homes by ward name.
+
+```sql
+CREATE TABLE homes_grouped
+AS
+SELECT danger, ward_name, COUNT(osm_id) as ct_homes
+FROM homes_ward
+group by danger, ward_name;
+
+```
+
+Now we need to calculate how many homes per ward are in each level of 'danger'. So we create the following fields:
+```sql
+ALTER TABLE wards
+ADD COLUMN total_homes int;
+
+ALTER TABLE wards
+ADD COLUMN very_high int;
+
+ALTER TABLE wards
+ADD COLUMN high int;
+
+ALTER TABLE wards
+ADD COLUMN medium int;
+
+ALTER TABLE wards
+ADD COLUMN low int;
+
+ALTER TABLE wards
+ADD COLUMN unk_nown int;
+
+```
+
+```sql
+```
+
 
 ### Results
   Interpretation
