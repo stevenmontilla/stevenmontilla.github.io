@@ -357,8 +357,9 @@ SET pop_density = totalpop / area_km2;
 ```
 
 ### Results
-  [Check this interactive map](dar\assets\map1\index.html) showing the percentage of homes with unknown risk.
+  [Check this interactive map](dar\assets\map1) showing the percentage of homes with unknown risk.
 
-  ![map1](dar\assets\risk_piecharts.png)
+  ![map1](dar\assets\risk_piecharts)
+
   Interpretation
   Link to leaflet map and static maps
