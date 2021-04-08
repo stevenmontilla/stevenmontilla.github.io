@@ -108,21 +108,6 @@
                         <td>' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ward_code'] !== null ? autolinker.link(feature.properties['ward_code'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['district_n'] !== null ? autolinker.link(feature.properties['district_n'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['district_c'] !== null ? autolinker.link(feature.properties['district_c'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['region_nam'] !== null ? autolinker.link(feature.properties['region_nam'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['region_cod'] !== null ? autolinker.link(feature.properties['region_cod'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">totalpop</th>\
                         <td>' + (feature.properties['totalpop'] !== null ? autolinker.link(feature.properties['totalpop'].toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -155,17 +140,16 @@
                         <td>' + (feature.properties['low'] !== null ? autolinker.link(feature.properties['low'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                        <th scope="row">No Risk</th>\
                         <td colspan="2">' + (feature.properties['unk_nown'] !== null ? autolinker.link(feature.properties['unk_nown'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                          <th scope="row">Area(km2) </th>\
                         <td colspan="2">' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">pop_density</th>\
                         <td>' + (feature.properties['pop_density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['homes_p_1000'] !== null ? autolinker.link(feature.properties['homes_p_1000'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -180,7 +164,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(201,160,220,1.0)',
@@ -195,7 +179,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(174,135,208,1.0)',
@@ -210,7 +194,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(120,81,169,1.0)',
@@ -225,7 +209,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(82,45,128,1.0)',
@@ -240,7 +224,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(11,3,45,1.0)',
@@ -315,7 +299,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,217,1,1.0)',
@@ -386,7 +370,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 3.0, 
+                weight: 3.0,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,217,1,1.0)',
