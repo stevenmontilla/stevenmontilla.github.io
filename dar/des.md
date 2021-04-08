@@ -362,7 +362,7 @@ SET pop_density = totalpop / area_km2;
   This analysis attempted to determine the vulnerability of individual homes and wards to flooding based on two factors: the building materials and the proximity to different flood zones of different flood scenarios.
 
 
-  [Check this interactive map](assets\map1\index.html) showing the percentage of homes with unknown risk.
+  [Check this interactive map](assets\mapa\index.html) showing the percentage of homes with unknown risk.
 
   ![map1](assets\piechartc.png)
   Interpretation
