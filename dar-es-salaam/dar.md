@@ -271,6 +271,86 @@ ALTER TABLE wards
 ADD COLUMN unk_nown int;
 
 ```
+Then we populate the fields with the proper counts and set any null values to 0. At the end we calculate the total number of homes by adding all the disaggregated fields.
+```sql
+UPDATE wards
+SET very_high = homes_grouped.ct_homes
+FROM homes_grouped
+WHERE
+		homes_grouped.ward_name = wards.ward_name
+		AND
+		homes_grouped.danger = 'Very high risk';
+
+UPDATE wards
+SET very_high = 0
+WHERE
+		very_high is null;
+
+UPDATE wards
+SET high = homes_grouped.ct_homes
+FROM homes_grouped
+WHERE
+		homes_grouped.ward_name = wards.ward_name
+		AND
+		homes_grouped.danger = 'High risk';
+
+UPDATE wards
+SET high = 0
+WHERE
+		high is null;
+
+UPDATE wards
+SET medium = homes_grouped.ct_homes
+FROM homes_grouped
+WHERE
+		homes_grouped.ward_name = wards.ward_name
+		AND
+		homes_grouped.danger = 'Medium risk';
+
+UPDATE wards
+SET medium = 0
+WHERE
+		medium is null;
+
+UPDATE wards
+SET low = homes_grouped.ct_homes
+FROM homes_grouped
+WHERE
+		homes_grouped.ward_name = wards.ward_name
+		AND
+		homes_grouped.danger = 'Low risk';
+
+UPDATE wards
+SET low = 0
+WHERE
+		low is null;
+
+UPDATE wards
+SET unk_nown = homes_grouped.ct_homes
+FROM homes_grouped
+WHERE
+	homes_grouped.ward_name = wards.ward_name
+	AND
+	homes_grouped.danger = 'No risk';
+
+UPDATE wards
+SET unk_nown = 0
+WHERE
+		unk_nown is null;
+
+UPDATE wards
+SET total_homes = very_high + high + medium + low + unk_nown;
+
+
+```
+
+
+```sql
+```
+```sql
+```
+
+
 
 ```sql
 ```
