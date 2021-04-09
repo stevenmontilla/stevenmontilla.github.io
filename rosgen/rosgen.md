@@ -13,7 +13,7 @@ W. Steven Montilla M., Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 Replication Materials Available at: [Rosgen repository](https://github.com/stevenmontilla/RE-rosgen)
 
 Created: `24 March 2021`
-Revised: `25 March 2021`
+Revised: `9 April 2021`
 
 ### Introduction
 Developing a classification schema for rivers and streams is a hard task. The everchanging nature of these systems as well as the practicality to take measurements on the field are limitations to river classification. The various classifications methods available may also produce different results on the same river. Therefore, Kasprak et al. (2016) were motivated to conduct a direct comparison between 4 different classification frameworks to analyze their agreements and discrepancies.
@@ -132,10 +132,12 @@ Fig.6 Rosgen schema with highlighted categories.
 
 ### Discussion
 
-The Boulder Granite Creek at this site was classified as a C4b stream which is in agreement to Kasprak's classification (Kasprak et al, 2016). As seen in Table 2 and Figure 6, all the entrenchment and width to depth ratios fell within the ranges established by the Rosgen key. I calculated a sinuosity value of 1.16 that falls short of the > 1.2 required for the **C** stream type. However, for  the sinuosity value, the Rosgen classification specifies that entrenchment and sinuosity can vary by +/- 0.2 units. Taking this factor into account would bring my sinuosity value to 1.18 which could be rounded to 1.2, marginally less than the > 1.2 required to be classified as a stream type C. I decided to still go through with classifying this stream as type **C** because the small margin could be accounted for by errors in digitization that could result in lower sinuosity values. Moreover, the Rosgen key does not provide any alternatives for  a sinuosity lower than 1.2 with the values for width to depth and entrenchment ratios shown in table 2.
+The Boulder Granite Creek at this site was classified as a C4b stream which is in agreement to Kasprak's classification (Kasprak et al, 2016). As seen in Table 2 and Figure 6, all the entrenchment and width to depth ratios fell within the ranges established by the Rosgen key. I calculated a sinuosity value of 1.16 that fell short of the > 1.2 required for the **C** stream type. However, for  the sinuosity value, the Rosgen classification specifies that entrenchment and sinuosity can be within a +/- 0.2 error margin. Taking this margin into account would bring my sinuosity value to 1.18 which could be rounded to 1.2, marginally less than the > 1.2 required to be classified as a stream type C. I decided to still go through with classifying this stream as type **C** because the small margin could be accounted for by errors in digitization that could result in lower sinuosity values. Specifically, it was difficult to know exactly the course of the stream using the elevation model which could have lead to an oversimplification of the curvature of the stream, resulting in lower sinuosity values.  Moreover, the Rosgen key does not provide any alternatives for a sinuosity lower than 1.2 with the values for width to depth and entrenchment ratios shown in table 2.
 
-For the Level II classification, the % slope was within the range established
-
-
+For the Level II classification, the % slope was within the range established. Moreover, we were not able to collect our own channel material data, so we used the one registered by the CHaMP.
 
 ### Conclusions
+
+This replication was successful at obtaining the same results as Kasprak et al. (2016) did for this study site using the Rosgen classification key. Nonetheless, there would be more confidence in the methods and results that were obtained by having first hand field observations. As mentioned above, the digitization of the bank and valley was done without much context of the site, depending only on elevation models that were personally challenging to interpret. Since this was a replication study, there was more confidence on the results obtained because they could be compared to Kasprak et al (2016). However, if this study had not had a comparison point, I would have not been confident that the results were accurate, since we lacked more field observations and experience digitizing waterways from elevation models.
+
+Finally, there is great potential in relying on lidar elevation data and this methodology to classify rivers and streams. Undoubtedly, this would be more efficient than visiting each site and conducting the classification 'by hand'. Nonetheless, I do think that the analysts doing this kind of work should have more experience deducing river banks and valleys accurately from elevation models to increase the confidence in the results of the methodology.
