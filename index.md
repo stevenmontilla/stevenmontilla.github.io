@@ -13,7 +13,7 @@ _Check out my Remote Sensing and cartography [portfolio](https://wmontillamorant
 - [Gravity Model of Spatial Interaction](gravity/gravity.md)
 - [Replication of Kasprak et al. (2016)](rosgen/rosgen.md)
 - [Flood Vulnerability in Dar-es-Salaam](dar/des.md)
-- [RP- Vulnerability modeling for sub-Saharan Africa](malcomb/docs/report/RP-Malcomb-Report_Steven.md)
+- [RP- Vulnerability modeling for sub-Saharan Africa](malcomb/RP-Malcomb-Report_Steven.md)
 
 ### Blog
 - [Week 1 - What is Open GIScience?](blog/week1.md)
