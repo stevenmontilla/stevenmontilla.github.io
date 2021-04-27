@@ -37,10 +37,46 @@ Outline the data used in the study, including:
 - transformations applied to the variables (e.g. rescaling variables, calculating derived variables, aggregating to different geographic units, etc.)
 
 This part may be compiled collaboratively as a group!
+#### Overview
+Malcomb et al. (2014) calculated household resilience seen in scores using three different data sources (refer to Fig. 2 of Malcomb et al. 2014)
+- The variables to calculate Adaptive Capacity were obtained from the USAID's Demographic and Health Surveys (DHS).
+- Livelihood sensitivity variables were taken from the USAID's Famine Early Warning Systems Network (FEWSNET).
+- Finally, physical exposure variables were taken from the United Nations Environment Programme (UNEP).
 
-Malcomn et al. calculated a composite
+#### Background of Data Sources
 
+##### USAID's Demographic and Health Surveys
+  [Demographic and Health Surveys (DHS)](https://dhsprogram.com/Methodology/Survey-Types/DHS.cfm) are nationally-representative household surveys that provide data for a wide range of monitoring and impact evaluation indicators in the areas of population, health, and nutrition.(from DHS website). These surveys record assets and access to resources at the household level. The following list outlines the specific variables that were taken into account in this part of the replication. Especifically, DHS data was only used to obtain assets and access data to calculate Adaptive Capacity (40% of the Household Resilience Score).
 
+  For *ASSETS*
+
+  |  Name listed by Malcomb et al. (2014)  |      Variable (from DHS 2010) used in replication    | Possible values                          |
+  |:--------------------------------------:|:----------------------------------------------------:|------------------------------------------|
+  |         # Livestock Units (4%)         |           Livestock, herds or farm animals           | yes or no                                |
+  |                                        | NA - cows, bulls own                                 | 0 - 95+, unknown                         |
+  |                                        |            NA - horses, donkeys, mules own           | 0 - 95+, unknown                         |
+  |                                        |                       Goats own                      | 0 - 95+, unknown                         |
+  |                                        | Sheep own                                            | 0 - 95+, unknown                         |
+  |                                        | Poultry own                                          | 0 - 95+, unknown                         |
+  |                                        | Other own                                            | 0 - 95+, unknown                         |
+  | Arable Land (Hectares) (6%)            | "Hectares for agricultural land"                     | 95 or more 98 "unknown"                  |
+  | # in Household Sick in Past 12 mo (3%) | "Member has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Mother has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Father has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Mother/father dead or been very sick for 3+ months" | YES/ NO/ DK                              |
+  | Wealth Index Score (4%)                | DHS 2010, HV270                                      | poorest, poorer, middle, richer, richest |
+  | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
+
+  For *ACCESS*
+  | Name listed by Malcomb et al. (2014) | Variable (from DHS 2010) used in replication | Possible values                                                                                                                                                           |
+  |:------------------------------------:|:--------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  |       Time to water source (4%)      |          Time to get to water source         | On premises, do not know                                                                                                                                                  |
+  |           Electricity (3%)           | Has electricity                              | Yes/NO                                                                                                                                                                    |
+  |       Type of cooking fuel (2%)      |             Type of cooking fuel             | Electricity, LPG/Natural gas,  Natural gas, Biogas, Kerosene,  Coal/lignite, charcoal, wood,  straw/shrubs/grass, agricultural c rop, animal dung, no food cooked,  other |
+  |     Sex of head of household (2%)    |          "Sex of head of household"          | Male, Female                                                                                                                                                              |
+  |         Own a cell phone (4%)        | has a mobile telephone                       | Yes/NO                                                                                                                                                                    |
+  |           Own a radio (3%)           | Has Radio                                    | Yes/NO                                                                                                                                                                    |
+  |   House setting (urban/rural) (2%)   | type of place of residence                   | Urban, Rural                                                                                                                                                              |
 
 
 
@@ -78,22 +114,22 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 Figures to Include:
 - map of resilience by traditional authority in 2010, analagous to figure 4 of the original study
 
-![Adaptive Capacity](malcomb/results/maps/ac_2010.png)
+![Adaptive Capacity](./results/maps/ac_2010.png)
 
 
 - map of vulnerability in Malawi, analagous to figure 5 of the original study
 
-![vulnerability](malcomb/results/maps/vulnerability.png)
+![vulnerability](./results\maps\vulnerability.png)
 
 
 - map of difference between your figure 4 and the original figure 4
 
-![vulnerability](malcomb/results/maps/diff_map_res.png)
+![vulnerability](./results\maps\diff_map_res.png)
 
 
 - map of difference between your figure 5 and the original figure 5
 
-![vulnerability](.../results/maps/vuln_map_dif.png)
+![vulnerability](./results\maps\vuln_map_dif.png)
 
 ## Unplanned Deviations from the Protocol
 
