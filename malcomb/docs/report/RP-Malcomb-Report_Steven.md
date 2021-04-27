@@ -93,7 +93,7 @@ Figures to Include:
 
 - map of difference between your figure 5 and the original figure 5
 
-![vulnerability](malcomb/results/maps/vuln_map_dif.png)
+![vulnerability](.../results/maps/vuln_map_dif.png)
 
 ## Unplanned Deviations from the Protocol
 
