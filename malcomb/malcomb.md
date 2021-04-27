@@ -68,6 +68,7 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
 
   For *ACCESS*
+
   | Name listed by Malcomb et al. (2014) | Variable (from DHS 2010) used in replication | Possible values                                                                                                                                                           |
   |:------------------------------------:|:--------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |       Time to water source (4%)      |          Time to get to water source         | On premises, do not know                                                                                                                                                  |
@@ -77,6 +78,7 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   |         Own a cell phone (4%)        | has a mobile telephone                       | Yes/NO                                                                                                                                                                    |
   |           Own a radio (3%)           | Has Radio                                    | Yes/NO                                                                                                                                                                    |
   |   House setting (urban/rural) (2%)   | type of place of residence                   | Urban, Rural                                                                                                                                                              |
+  
 
 
 
