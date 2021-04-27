@@ -37,8 +37,34 @@ Outline the data used in the study, including:
 - transformations applied to the variables (e.g. rescaling variables, calculating derived variables, aggregating to different geographic units, etc.)
 
 This part may be compiled collaboratively as a group!
+#### Overview
+Malcomb et al. (2014) calculated household resilience seen in scores using three different data sources (refer to Fig. 2 of Malcomb et al. 2014)
+- The variables to calculate Adaptive Capacity were obtained from the USAID's Demographic and Health Surveys (DHS).
+- Livelihood sensitivity variables were taken from the USAID's Famine Early Warning Systems Network (FEWSNET).
+- Finally, physical exposure variables were taken from the United Nations Environment Programme (UNEP).
 
-Malcomn et al. calculated a composite
+#### Background of Data Sources
+
+##### USAID's Demographic and Health Surveys
+  [Demographic and Health Surveys (DHS)](https://dhsprogram.com/Methodology/Survey-Types/DHS.cfm) are nationally-representative household surveys that provide data for a wide range of monitoring and impact evaluation indicators in the areas of population, health, and nutrition.(from DHS website). This surveys record assets and access to resources at the household level. The following list outlines the specific variables that were taken into account in this part of the replication.   
+
+  |  Name listed by Malcomb et al. (2014)  |             Variable used in replication             | Possible values                          |
+  |:--------------------------------------:|:----------------------------------------------------:|------------------------------------------|
+  |         # Livestock Units (4%)         |           Livestock, herds or farm animals           | yes or no                                |
+  |                                        | NA - cows, bulls own                                 | 0 - 95+, unknown                         |
+  |                                        |            NA - horses, donkeys, mules own           | 0 - 95+, unknown                         |
+  |                                        |                       Goats own                      | 0 - 95+, unknown                         |
+  |                                        | Sheep own                                            | 0 - 95+, unknown                         |
+  |                                        | Poultry own                                          | 0 - 95+, unknown                         |
+  |                                        | Other own                                            | 0 - 95+, unknown                         |
+  | Arable Land (Hectares) (6%)            | "Hectares for agricultural land"                     | 95 or more 98 "unknown"                  |
+  | # in Household Sick in Past 12 mo (3%) | "Member has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Mother has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Father has been very sick for 3+ months last year"  | YES/ NO/ DK                              |
+  |                                        | "Mother/father dead or been very sick for 3+ months" | YES/ NO/ DK                              |
+  | Wealth Index Score (4%)                | DHS 2010, HV270                                      | poorest, poorer, middle, richer, richest |
+  | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
+
 
 
 
