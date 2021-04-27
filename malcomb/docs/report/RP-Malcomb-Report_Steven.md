@@ -46,9 +46,11 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
 #### Background of Data Sources
 
 ##### USAID's Demographic and Health Surveys
-  [Demographic and Health Surveys (DHS)](https://dhsprogram.com/Methodology/Survey-Types/DHS.cfm) are nationally-representative household surveys that provide data for a wide range of monitoring and impact evaluation indicators in the areas of population, health, and nutrition.(from DHS website). This surveys record assets and access to resources at the household level. The following list outlines the specific variables that were taken into account in this part of the replication.   
+  [Demographic and Health Surveys (DHS)](https://dhsprogram.com/Methodology/Survey-Types/DHS.cfm) are nationally-representative household surveys that provide data for a wide range of monitoring and impact evaluation indicators in the areas of population, health, and nutrition.(from DHS website). These surveys record assets and access to resources at the household level. The following list outlines the specific variables that were taken into account in this part of the replication. Especifically, DHS data was only used to obtain assets and access data to calculate Adaptive Capacity (40% of the Household Resilience Score).
 
-  |  Name listed by Malcomb et al. (2014)  |             Variable used in replication             | Possible values                          |
+  For *ASSETS*
+
+  |  Name listed by Malcomb et al. (2014)  |      Variable (from DHS 2010) used in replication    | Possible values                          |
   |:--------------------------------------:|:----------------------------------------------------:|------------------------------------------|
   |         # Livestock Units (4%)         |           Livestock, herds or farm animals           | yes or no                                |
   |                                        | NA - cows, bulls own                                 | 0 - 95+, unknown                         |
@@ -65,8 +67,16 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   | Wealth Index Score (4%)                | DHS 2010, HV270                                      | poorest, poorer, middle, richer, richest |
   | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
 
-
-
+  For *ACCESS*
+  | Name listed by Malcomb et al. (2014) | Variable (from DHS 2010) used in replication | Possible values                                                                                                                                                           |
+  |:------------------------------------:|:--------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  |       Time to water source (4%)      |          Time to get to water source         | On premises, do not know                                                                                                                                                  |
+  |           Electricity (3%)           | Has electricity                              | Yes/NO                                                                                                                                                                    |
+  |       Type of cooking fuel (2%)      |             Type of cooking fuel             | Electricity, LPG/Natural gas,  Natural gas, Biogas, Kerosene,  Coal/lignite, charcoal, wood,  straw/shrubs/grass, agricultural c rop, animal dung, no food cooked,  other |
+  |     Sex of head of household (2%)    |          "Sex of head of household"          | Male, Female                                                                                                                                                              |
+  |         Own a cell phone (4%)        | has a mobile telephone                       | Yes/NO                                                                                                                                                                    |
+  |           Own a radio (3%)           | Has Radio                                    | Yes/NO                                                                                                                                                                    |
+  |   House setting (urban/rural) (2%)   | type of place of residence                   | Urban, Rural                                                                                                                                                              |
 
 
 
