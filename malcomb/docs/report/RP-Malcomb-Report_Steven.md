@@ -104,22 +104,22 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 Figures to Include:
 - map of resilience by traditional authority in 2010, analagous to figure 4 of the original study
 
-![Adaptive Capacity](results/maps/ac_2010.png)
+![Adaptive Capacity](./results/maps/ac_2010.png)
 
 
 - map of vulnerability in Malawi, analagous to figure 5 of the original study
 
-![vulnerability](results\maps\vulnerability.png)
+![vulnerability](./results\maps\vulnerability.png)
 
 
 - map of difference between your figure 4 and the original figure 4
 
-![vulnerability](results\maps\diff_map_res.png)
+![vulnerability](./results\maps\diff_map_res.png)
 
 
 - map of difference between your figure 5 and the original figure 5
 
-![vulnerability](results\maps\vuln_map_dif.png)
+![vulnerability](./results\maps\vuln_map_dif.png)
 
 ## Unplanned Deviations from the Protocol
 
