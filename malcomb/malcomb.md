@@ -67,6 +67,7 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   | Wealth Index Score (4%)                | DHS 2010, HV270                                      | poorest, poorer, middle, richer, richest |
   | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
 
+
   For **ACCESS**
 
 
@@ -81,14 +82,22 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   |   House setting (urban/rural) (2%)   | type of place of residence                   | Urban, Rural                                                                                                                                                              |
 
 ##### USAID's Famine Early Warning Network (FEWSNET)
-[FEWSNET](https://fews.net/about-us), the Famine Early Warning Systems Network, is a leading provider of early warning and analysis on acute food insecurity around the world (from FEWSNET website). One of the goals of the FEWSNET is to predict future cases of acute food insecurity in order to inform humanitarian response. Therefore, the data they collect is tailored towards measuring the vulnerability of communities mainly focused on land use practices, food sourcing, and coping strategies of the communities surveyed. Malcomb et al. (2014) used variables from the FEWSNET 2005 survey in Malawi to calculate the 20% Livelihood Sensitivity portion of the Household Resilience scores. However, they were not clear on which variables exactly they used, so we had to use our judgement to make the our best informed guesses.
+[FEWSNET](https://fews.net/about-us), the Famine Early Warning Systems Network, is a leading provider of early warning and analysis on acute food insecurity around the world (from FEWSNET website). One of the goals of the FEWSNET is to predict future cases of acute food insecurity in order to inform humanitarian response. Therefore, the data they collect is tailored towards measuring the vulnerability of communities mainly focused on land use practices, food sourcing, and coping strategies of the communities surveyed. Malcomb et al. (2014) used variables from the FEWSNET 2005 survey in Malawi to calculate the 20% Livelihood Sensitivity portion of the Household Resilience scores. However, they were not clear on which variables exactly they used, so we had to use our judgement to make the our best informed guesses. The following table shows the attributes and calculations that we carried out in contrast to what was listed in the paper.
 
-|                                             Name listed by Malcomb et al. (2014)                                             |                                     Variable (from DHS 2010) used in replication                                    | Possible values |
+
+|                                             Name listed by Malcomb et al. (2014)                                             |                                     Variable (from FEWSNET 2005) used in replication                                    | Possible values |
 |:----------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|:---------------:|
 |                                                    Food From Own Farm (6%)                                                   |                                                Sources of food: crops                                               | x%              |
 |                                                  Income From Wage Labor (6%)                                                 | Sources of Cash: labour / total income                                                                              | x%              |
 |           Income From Cash Crops (4%)  (% labor that is susceptible to market shocks (tobacco, sugar, tea, coffee))          | Sources of cash: crops / total income  (Included income from **all** crops due to vague definition of _cash crops_) | x%              |
 | Disaster Coping Strategy (4%)  (potential sources of additional food and income **that lead  to environmental degradation**) |                           Income from sales of firewood, grass, wild foods / total income                           | x%              | 
+
+##### United Nations Environment Programme (UNEP)/ Global Resource Information Database (GRID) Data:
+
+The GRID-Geneva database comes from a partnership between the UNEP, the Swiss Federal Office for the Environment and the University of Geneva. Their focus is on processing, analysis and creating models from satellite data using remote sensing techniques and GIS with the goal of providing scientific information to decision makers.(Learn more [here](https://unepgrid.ch/en/about-us/grid]))
+The Global Risk Data Platforms is the product of a multiagency effort to share spatial information on global risk from natural hazards. (Learn more [here](https://preview.grid.unep.ch/))
+
+- Following the procedure from Malcomb et al. (2014), we obtained the Estimated Risk for Flood Hazard and Exposition to Drought Events from this data source.
 
 
 
