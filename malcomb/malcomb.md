@@ -99,11 +99,13 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
 The GRID-Geneva database comes from a partnership between the UNEP, the Swiss Federal Office for the Environment and the University of Geneva. Their focus is on processing, analysis and creating models from satellite data using remote sensing techniques and GIS with the goal of providing scientific information to decision makers.(Learn more [here](https://unepgrid.ch/en/about-us/grid]))
 The Global Risk Data Platforms is the product of a multiagency effort to share spatial information on global risk from natural hazards. (Learn more [here](https://preview.grid.unep.ch/))
 
-- Following the procedure from Malcomb et al. (2014), we obtained the Estimated Risk for Flood Hazard and Exposition to Drought Events from this data source.
+- Following the procedure from Malcomb et al. (2014), we obtained the Estimated Risk for Flood Hazard and Exposition to Drought Events layers from this data source.
 
 #### Data transformations
 
-The first transformation of the data was normalization. Since all variables used came in different units, it would be impossible to compare them without normalizing them. Malcomb et al. (2014) do so by transforming all variables to a scale of 0-5 (6 data categories). However, the script becomes confusing when they mention that they used quintiles (5 data categories). Since their highest score was 5, but they only had 5 categories, we used the quintile breaks and modified it to be a scale from 1-5.
+The first transformation of the data was normalization. Since all variables used came in different units, it would be impossible to compare them without normalizing them. Malcomb et al. (2014) do so by transforming all variables to a scale of 0-5 (6 data categories). However, the script becomes confusing when they mention that they used quintiles (5 data categories). Since their highest score was 5, but they only had 5 categories, we used the quintile breaks and modified it to be a scale from 1-5 resulting in 5 total categories.
+
+Capacity scores were weighted following table 2. of Malcomb et al. and then summed to calculate capacity scores with the corresponding weighted variables. We multiplied the score by 20 to match the scale on Malcomb et al's figures.
 
 
 
@@ -115,6 +117,9 @@ The replication study will use R.
 ## Materials and Procedure
 
 ### Step 1: Preprocessing of Geographic Boundaries
+
+#### Workflow First Version
+
 DHS Households table (1 row/house) → ***field calc*** → conversion to 0-5 scale → weighted A/C score → ***join by attribute*** w/ DHS data points (village level) → ***spatial join AND group*** w/ traditional authorities (GADM adm_2) → traditional authorities w/ Capacity Score → ***Raster***
 
 Drought exposure → ***rescale 0-5***
@@ -128,6 +133,37 @@ Data Input: UNEP/grid Europe, Famine early warning network → ***Raster*** → 
 
 ### Step 3: Creating the Model of Vulnerability
 ***Calculate***: Household resilience = adaptive capacity + livelihood sensitivity - biophysical exposure
+
+#### Revised Version
+1. Download traditional authorities: MWI_adm2.shp
+1. Adding TA and LZ ids to DHS clusters
+1. Removing HH entries with invalid or unknown values
+1. Aggregating HH data to DHA clusters, and then joining to traditional authorities to get:
+  ta_capacity_2010
+1. Removing index and livestock values that were NA
+1. Sum of Livestock by HH
+1. Scale adaptive capacity fields (from DHS data) on scale of 1 - 5 to match Malcomb et al.
+1. Weight capacity based on table 2 in Malcomb et al.
+1. Calculate capacity by summing all weighted capacity fields
+1. Joining mean capacities to TA polygon layer
+  1. Summarize capacity from households to traditional authorities
+1. Making capacity score resemble Malcomb et al’s work (scores on range of 0-20) by multiplying capacity score by 20
+1. Categorizing capacities using natural jenks methods
+1. Creating blank raster and setting extent of Malawi - CRS: 4326
+1. Reproject, clip and resampling flood risk and drought exposure rasters to new extent and cell size
+  1. Uses bilinear resampling for drought to average continuous population exposure values
+  1. Uses nearest neighbor resampling for flood risk to preserve integer values
+  1. Removing factors and recasting them as integers
+  1. Clipping TAs with LZs to remove lake
+1. Rasterizing final TA capacity layer
+1. Masking flood and drought layers
+1. Reclassify drought raster into quantiles
+1. Add all RASTERs together to calculate final output: final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20
+1. Use zonal statistics to aggregate raster to TA geometry for final calculation of vulnerability in each traditional authority
+
+#### Final Revision
+
+Besides what is above, we added the variables for the Livelihood zones procedures and the comparison methodology.
 
 
 ## Replication Results
@@ -170,6 +206,8 @@ Provide a summary and interpretation of the key findings of the replication *vis
 - lack of code
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
+
+Epistemic uncertainty from use of expert opinion: Malcomb attribute designations
 
 ## Conclusion
 
