@@ -161,9 +161,7 @@ Data Input: UNEP/grid Europe, Famine early warning network → ***Raster*** → 
 1. Add all RASTERs together to calculate final output: final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20
 1. Use zonal statistics to aggregate raster to TA geometry for final calculation of vulnerability in each traditional authority
 
-#### Final Revision
-
-Besides what is above, we added the variables for the Livelihood zones procedures and the comparison methodology.
+Besides what is above, we added the variables for the Livelihood zones procedures and the  methodology for comparison with Malcomb et al's results.
 
 
 ## Replication Results
@@ -174,7 +172,7 @@ For each output from the original study (mainly figure 4 and figure 5), present 
 3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
 
 Figures to Include:
-- map of resilience by traditional authority in 2010, analagous to figure 4 of the original study
+- map of resilience by traditional authority in 2010, analogous to figure 4 of the original study
 
 ![Adaptive Capacity](./results/maps/ac_2010.png)
 
@@ -198,6 +196,11 @@ Figures to Include:
 Summarize changes and uncertainties between
 - your interpretation and plan for the workflow based on reading the paper
 - your final workflow after accessing the data and code and completing the code
+
+- As mentioned above, at first we thought that Malcomb et al. had normalized all the variables in a 0-5 scale as they mention on the paper. However, after inspecting the article more and talking about this issue in class, we decided to normalize the data in a 1-5 scale using the quintiles Malcomb et al. confusingly also mention.
+- When looking at the adaptive capacity maps from Malcomb et al., we noticed that our results were in another scale, so we decided to multiply the results by 20 to fit the scale that Malcomb et al. used in their maps. However, the true reason why the scores  were modified or how they got their results in that scale is unknown to us.
+- On a similar note, the Livelihood Sensitivity attributes were taken from the FEWSNET dataset pretty much arbitrarily. We did not know how Malcomb et al used that data specifically neither did we know what attributes they used. Malcomb et al. provide a list of indicators in Table 1. but the ones listed under Livelihood Sensitivity were not specifically named that in the FEWSNET dataset. To resolve this, as a group we gathered our best informed guesses and calculated values for each variable as shown in the data section above. 
+
 
 ## Discussion
 
