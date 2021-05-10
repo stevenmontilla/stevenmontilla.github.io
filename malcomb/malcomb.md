@@ -164,22 +164,15 @@ Data Input: UNEP/grid Europe, Famine early warning network → ***Raster*** → 
 Besides what is above, we added the variables for the Livelihood zones procedures and the  methodology for comparison with Malcomb et al's results.
 
 
-## Replication Results
+## Reproduction Results
 
-For each output from the original study (mainly figure 4 and figure 5), present separately the results of the replication attempt.
-
-2.	State whether the original study was or was not supported by the replication
-3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
-
-Figures to Include:
-- map of resilience by traditional authority in 2010, analogous to figure 4 of the original study
+The reproduction of the adaptive capacity classification had a strong similarity (rho = 0.7711839) with the original map. In the case of the vulnerability maps, we observed a Spearman's rho coefficient = 0.2686568 showing high dissimilarity between Malcomb et al's results and ours.
 
 ![Adaptive Capacity](./results/maps/ac_2010.png)
 
 - Figure 1. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's figure 4.
 
-
-![Confusion Matrix](./results\figures\confusing_matrix.png)
+![Confusion Matrix](./results\figures\confusion_matrix.png)
 
 - Figure 2. Confusion matrix for Malcomb et al's Figure 4 and our outcome.
 
@@ -215,7 +208,9 @@ Provide a summary and interpretation of the key findings of the replication *vis
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
 
-Epistemic uncertainty from use of expert opinion: Malcomb attribute designations
+- However, considering that we were following the same steps, and using the same data, I would have expected a higher Spearman's Rho.  
+
+Epistemic uncertainty from use of expert opinion: Malcomb attribute designations (Tate)
 
 ## Conclusion
 
