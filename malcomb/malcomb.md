@@ -184,7 +184,7 @@ The reproduction of the adaptive capacity classification had a strong similarity
 
 - Figure 4. Difference between reproduced vulnerability map and Malcomb et al's.
 
-![scatter plot](./results\maps\scatter_plot.png)
+![scatter plot](./results\figures\scatter_plot.png)
 
 - Figure 5. Plot of similarity between the reproduced vulnerability scores and Malcomb et al's.
 
@@ -202,6 +202,14 @@ Provide a summary and interpretation of the key findings of the replication *vis
 - lack of code
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
+
+This partial reproduction of Malcomb et al (2014) was partially successful. Considering that were trying to closely follow their methodology and data, it is surprising to not get the same results as Malcomb et al. given that they claim their study to be very reproducible and, as Prof. Holler mentioned, it has been cited a considerable amount of times in the literature.
+
+Regarding the reproduction of the adaptive capacity map, there was a high Spearman's rho correlation between the map our classification and the original study. However, it worth questioning whether it is good enough for a reproduction of a study. Specially considering that there was less uncertainty when getting the data for adaptive capacity than for Livelihood Sensitivity for example. Possible explanations for the difference between the original study and our reproduction may be related to some of the deviations mentioned above. For example, our interpretation of the scaling that they conducted in the original study may be wrong, introducing uncertainty to our results. Similarly, the rescaling of the results by multiplying by 20 may have also introduced uncertainty given that Malcomb et al did not specifically outlined how they came up with adaptive capacity scores in that scale.
+
+-adaptive capacity map
+  - high rho but high enough?
+  - used same data but the decision on the rating and uncertainty in rescaling may be the source of difference
 
 - However, considering that we were following the same steps, and using the same data, I would have expected a higher Spearman's Rho.  
 
