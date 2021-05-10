@@ -169,24 +169,27 @@ The reproduction of the adaptive capacity classification had a strong similarity
 
 ![Adaptive Capacity](./results/maps/ac_2010.png)
 
-- Figure 1. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's figure 4.
+- Figure 1. Reproduced map of adaptive capacity in Malawi analogous to Malcomb et al's figure 4.
+
+![Adaptive Capacity](./results/maps/diff_map_res.png)
+- Figure 2. Difference between reproduced adaptive capacity map and Malcomb et al's.  
 
 ![Confusion Matrix](./results\figures\confusion_matrix.png)
 
-- Figure 2. Confusion matrix for Malcomb et al's Figure 4 and our outcome.
+- Figure 3. Confusion matrix for Malcomb et al's Figure 4 and our outcome.
 
 
 ![vulnerability](./results\maps\vulnerability.png)
 
-- Figure 3. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's Figure 5.
+- Figure 4. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's Figure 5.
 
-![vulnerability](./results\maps\diff_map_res.png)
+![vulnerability](./results\maps\vuln_map_dif.png)
 
-- Figure 4. Difference between reproduced vulnerability map and Malcomb et al's.
+- Figure 5. Difference between reproduced vulnerability map and Malcomb et al's.
 
 ![scatter plot](./results\figures\scatter_plot.png)
 
-- Figure 5. Plot of similarity between the reproduced vulnerability scores and Malcomb et al's.
+- Figure 6. Plot of similarity between the reproduced vulnerability scores and Malcomb et al's.
 
 ## Unplanned Deviations from the Protocol
 
@@ -207,11 +210,7 @@ This partial reproduction of Malcomb et al (2014) was partially successful. Cons
 
 Regarding the reproduction of the adaptive capacity map, there was a high Spearman's rho correlation between the map our classification and the original study. However, it worth questioning whether it is good enough for a reproduction of a study. Specially considering that there was less uncertainty when getting the data for adaptive capacity than for Livelihood Sensitivity for example. Possible explanations for the difference between the original study and our reproduction may be related to some of the deviations mentioned above. For example, our interpretation of the scaling that they conducted in the original study may be wrong, introducing uncertainty to our results. Similarly, the rescaling of the results by multiplying by 20 may have also introduced uncertainty given that Malcomb et al did not specifically outlined how they came up with adaptive capacity scores in that scale.
 
--adaptive capacity map
-  - high rho but high enough?
-  - used same data but the decision on the rating and uncertainty in rescaling may be the source of difference
-
-- However, considering that we were following the same steps, and using the same data, I would have expected a higher Spearman's Rho.  
+Regarding the vulnerability map reproduction, the results were not as successful.
 
 Epistemic uncertainty from use of expert opinion: Malcomb attribute designations (Tate)
 
