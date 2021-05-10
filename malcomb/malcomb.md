@@ -115,10 +115,9 @@ The original study was conducted using ArcGIS and STATA, but does not state whic
 The replication study will use R.
 
 ## Materials and Procedure
-
-### Step 1: Preprocessing of Geographic Boundaries
-
 #### Workflow First Version
+
+1. Step 1: Preprocessing of Geographic Boundaries
 
 DHS Households table (1 row/house) → ***field calc*** → conversion to 0-5 scale → weighted A/C score → ***join by attribute*** w/ DHS data points (village level) → ***spatial join AND group*** w/ traditional authorities (GADM adm_2) → traditional authorities w/ Capacity Score → ***Raster***
 
@@ -128,10 +127,10 @@ Flood risk → ***rescale 0-5***
 
 Livelihood zones → ***copy #s from spreadsheet*** →***rescale 0-5*** →  ***Rasterize*** → ***Raster Calc*** (w/ Drought Exposure and Flood Risk Rasters)
 
-### Step 2
+2. Step 2
 Data Input: UNEP/grid Europe, Famine early warning network → ***Raster*** → ***Weight values***: All vulnerability measures were weighted (table 2) and normalized between 0 & 5 (RStudio)
 
-### Step 3: Creating the Model of Vulnerability
+3. Step 3: Creating the Model of Vulnerability
 ***Calculate***: Household resilience = adaptive capacity + livelihood sensitivity - biophysical exposure
 
 #### Revised Version
@@ -190,10 +189,6 @@ The reproduction of the adaptive capacity classification had a strong similarity
 - Figure 5. Plot of similarity between the reproduced vulnerability scores and Malcomb et al's.
 
 ## Unplanned Deviations from the Protocol
-
-Summarize changes and uncertainties between
-- your interpretation and plan for the workflow based on reading the paper
-- your final workflow after accessing the data and code and completing the code
 
 - As mentioned above, at first we thought that Malcomb et al. had normalized all the variables in a 0-5 scale as they mention on the paper. However, after inspecting the article more and talking about this issue in class, we decided to normalize the data in a 1-5 scale using the quintiles Malcomb et al. confusingly also mention.
 - When looking at the adaptive capacity maps from Malcomb et al., we noticed that our results were in another scale, so we decided to multiply the results by 20 to fit the scale that Malcomb et al. used in their maps. However, the true reason why the scores  were modified or how they got their results in that scale is unknown to us.
