@@ -176,20 +176,25 @@ Figures to Include:
 
 ![Adaptive Capacity](./results/maps/ac_2010.png)
 
+- Figure 1. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's figure 4.
 
-- map of vulnerability in Malawi, analagous to figure 5 of the original study
+
+![Confusion Matrix](./results\figures\confusing_matrix.png)
+
+- Figure 2. Confusion matrix for Malcomb et al's Figure 4 and our outcome.
+
 
 ![vulnerability](./results\maps\vulnerability.png)
 
-
-- map of difference between your figure 4 and the original figure 4
+- Figure 3. Reproduced map of vulnerability in Malawi analogous to Malcomb et al's Figure 5.
 
 ![vulnerability](./results\maps\diff_map_res.png)
 
+- Figure 4. Difference between reproduced vulnerability map and Malcomb et al's.
 
-- map of difference between your figure 5 and the original figure 5
+![scatter plot](./results\maps\scatter_plot.png)
 
-![vulnerability](./results\maps\vuln_map_dif.png)
+- Figure 5. Plot of similarity between the reproduced vulnerability scores and Malcomb et al's.
 
 ## Unplanned Deviations from the Protocol
 
@@ -199,7 +204,7 @@ Summarize changes and uncertainties between
 
 - As mentioned above, at first we thought that Malcomb et al. had normalized all the variables in a 0-5 scale as they mention on the paper. However, after inspecting the article more and talking about this issue in class, we decided to normalize the data in a 1-5 scale using the quintiles Malcomb et al. confusingly also mention.
 - When looking at the adaptive capacity maps from Malcomb et al., we noticed that our results were in another scale, so we decided to multiply the results by 20 to fit the scale that Malcomb et al. used in their maps. However, the true reason why the scores  were modified or how they got their results in that scale is unknown to us.
-- On a similar note, the Livelihood Sensitivity attributes were taken from the FEWSNET dataset pretty much arbitrarily. We did not know how Malcomb et al used that data specifically neither did we know what attributes they used. Malcomb et al. provide a list of indicators in Table 1. but the ones listed under Livelihood Sensitivity were not specifically named that in the FEWSNET dataset. To resolve this, as a group we gathered our best informed guesses and calculated values for each variable as shown in the data section above. 
+- On a similar note, the Livelihood Sensitivity attributes were taken from the FEWSNET dataset pretty much arbitrarily. We did not know how Malcomb et al used that data specifically neither did we know what attributes they used. Malcomb et al. provide a list of indicators in Table 1. but the ones listed under Livelihood Sensitivity were not specifically named that in the FEWSNET dataset. To resolve this, as a group we gathered our best informed guesses and calculated values for each variable as shown in the data section above.
 
 
 ## Discussion
