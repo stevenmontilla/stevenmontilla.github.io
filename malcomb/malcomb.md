@@ -212,11 +212,11 @@ Regarding the reproduction of the adaptive capacity map, there was a high Spearm
 
 Regarding the vulnerability map reproduction, we were not as successful in reproducing Malcomb et al's results. With a rho coefficient of 0.2686568, there was little agreement between the original study and the reproduction. As seen in figure 5. our reproduction largely underestimated vulnerability except for a few areas on the coast, which were overestimated. The disagreement between the original study and our results was due to different sources of uncertainty. We only had a limited description of the methods provided in the paper and no code or detailed workflow to follow. Therefore, there was both uncertainty about the accuracy of the methods developed to reproduce the paper added to the uncertainty introduced by the decisions of the original authors.
 
-Firstly, regarding the original study, there is epistemic uncertainty in the results of Malcomb et al's analaysis. As Tate(2012) states, this type of uncertainty is the result of utilizing expert opinion and community surveys in the selection of parameters and weighting of the resilience index calculated in the original study. Malcomb et al (2014) conducted interviews to identify methathemes to frame their surveys and include variables to resilience index that were meaningful in understanding vulnerability in the Malawian context.
+Firstly, regarding the original study, there is epistemic uncertainty in the results of Malcomb et al's analysis. As Tate(2012) states, this type of uncertainty is the result of utilizing expert opinion and community surveys in the selection of parameters and weighting of the resilience index calculated in the original study. Malcomb et al (2014) conducted interviews to identify metathemes to frame their surveys and include variables to resilience index that were meaningful in understanding vulnerability in the Malawian context. However, the kinds of questions Malcomb et al. (2014) ask in these interviews may also skew the topics talked about in the interviews and therefore affect what Malcomb et al. (2014) considered as methathemes. This is best visualized through Longley et al's (2005) conceptualization of uncertainty, where as researchers move through different differetn units of analysis, there is more distortion of the way the real world in conceived. 
 
-Firstly, the construction of the surveys administered to communities in Malawi may have left out important questions to understand vulnerability in the region. E
+Moreover,
 
-Epistemic uncertainty from use of expert opinion: Malcomb attribute designations (Tate)
+
 
 ## Conclusion
 
