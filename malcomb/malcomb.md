@@ -200,12 +200,6 @@ The reproduction of the adaptive capacity classification had a strong similarity
 
 ## Discussion
 
-Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
-- lack of data
-- lack of code
-- lack of details in the original analysis
-- uncertainties due to manner in which data has been used
-
 This reproduction of Malcomb et al (2014) was somewhat successful. Malcomb et al. (2014) claimed their study to be very reproducible. As Prof. Holler mentioned, it has been cited a considerable amount of times in the literature. Morever, we followed Malcomb et al's (2014) methodology to the best of our ability and used the same data. Therefore, it is dissapointing that we got such dissimilar results.
 
 Regarding the reproduction of the adaptive capacity map, there was a high Spearman's rho coefficient of 7711839 between the map our classification and the original study. However, it is worth questioning whether this is good enough for a reproduction of a study. Specially considering that there was less uncertainty when getting the data for adaptive capacity than for Livelihood Sensitivity, for example. Possible explanations for the difference between the original study and our reproduction may be related to some of the deviations mentioned in the previous section. For example, our interpretation of the scaling that Malcomb et al (2014) conducted in the original study may be wrong, introducing uncertainty to our results. Similarly, the rescaling of the results by multiplying by 20 may have also introduced uncertainty given that Malcomb et al did not specifically outlined how they came up with adaptive capacity scores in that scale.
@@ -219,9 +213,16 @@ In general terms, sources of uncertainty for this replication study were present
 Restate the key findings and discuss their broader societal implications or contributions to theory.
 Do the research findings suggest a need for any future research?
 
+- talk about Tate's simulation to address uncertainty.. etc, talk about how there was no model checking (did the model work?) after the model. talk about how this is an issue because uncertainty are hard to prove right or wrong due to lack of verification.
+
+
 ## References
 
-Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
+Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2nd ed. Chichester: Wiley. Chapter 6: Uncertainty, pages 127-153.
+
+Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. Applied Geography 48:17–30. DOI:10.1016/j.apgeog.2014.01.004
+
+Tate, E. 2013. Uncertainty Analysis for a Social Vulnerability Index. Annals of the Association of American Geographers 103 (3):526–543. doi:10.1080/00045608.2012.700616.
 
 ####  Report Template References & License
 
