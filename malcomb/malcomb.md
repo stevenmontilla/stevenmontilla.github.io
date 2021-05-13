@@ -217,6 +217,9 @@ Do the research findings suggest a need for any future research?
 
 - talk about Tate's simulation to address uncertainty.. etc, talk about how there was no model checking (did the model work?) after the model. talk about how this is an issue because uncertainty are hard to prove right or wrong due to lack of verification.
 
+## Acknowledments
+
+Thanks to Prof. Joseph for organizing this lab and preparing the materials. To Kufre Udoh for developing the reproduction script in R, helping me resolve problems with the code, and aswering questions. Likewise, credit to my lab group: Arielle Landau for guiding us in understanding the code, Maddie Tango and her issues submissions for helping me troubleshoot, and to Evan Killion, Jackson Mumper and Sanjana Roy, Maddie and Arielle for working together to understand the Malcomb et al. (2014) paper, creating workflows and compiling data for our reproduction. 
 
 ## References
 
