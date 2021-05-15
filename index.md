@@ -16,9 +16,12 @@ _Check out my Remote Sensing and cartography [portfolio](https://wmontillamorant
 - [RP- Vulnerability modeling for sub-Saharan Africa](malcomb/malcomb.md)
 
 ### Blog
-- [Week 1 - What is Open GIScience?](blog/week1.md)
-- [Week 2 -  GIS as a science, a tool and toolmaking](blog/week2.md)
-
+- [What is Open GIScience?](blog/week1.md)
+- [GIS as a science, a tool and toolmaking](blog/week2.md)
+- [Error and Uncertainty](blog/error.md)
+- [Spatial Twitter Analysis](blog/twitter.md)
+- [Humanitarian GIS](blog/humanitarian.md)
+- [Big Data](blog/bigdata.md)
 
 
 The course website is found [here](https://gis4dev.github.io).
