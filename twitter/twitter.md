@@ -56,18 +56,18 @@ Outline the data to be used in your replication study, including:
 ## Replication Results
 
 - temporal analysis graph
-![temporal analysis graph](twitter/results/figures/tweets_by_hour_akflood.png)
+![temporal analysis graph](./results/figures/tweets_by_hour_akflood.png)
 
 - content analysis graph
- 
-![content analysis graph](twitter/results/figures/word_network_akflood.png)
-![word rank](twitter/results/figures/word_rank.png)
-![word rank cleaned](twitter/results/figures/word_rank_cleaned.png)
+
+![content analysis graph](./results/figures/word_network_akflood.png)
+![word rank](./results/figures/word_rank.png)
+![word rank cleaned](./results/figures/word_rank_cleaned.png)
 
 - map of twitter activity
 
 - hot spot analysis
-![hot spot analysis ](twitter/results/maps/activityclusters.png)
+![hot spot analysis ](./results/maps/activityclusters.png)
 
 ## Unplanned Deviations from the Protocol
 
