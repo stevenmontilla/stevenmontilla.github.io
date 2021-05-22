@@ -14,6 +14,9 @@ _Check out my Remote Sensing and cartography [portfolio](https://wmontillamorant
 - [Replication of Kasprak et al. (2016)](rosgen/rosgen.md)
 - [Flood Vulnerability in Dar-es-Salaam](dar/des.md)
 - [RP- Vulnerability modeling for sub-Saharan Africa](malcomb/malcomb.md)
+- [RE- Spatial-temporal and content analysis of Twitter Data](twitter/twitter.md)
+
+
 
 ### Blog
 - [What is Open GIScience?](blog/week1.md)
