@@ -65,7 +65,7 @@ Outline the data to be used in your replication study, including:
 ![word rank cleaned](./results/figures/word_rank_cleaned.png)
 
 - map of twitter activity
-![tweet distribution](./results/figures/tweet_distribution.png)
+![tweet distribution](./results/maps/tweet_distribution.png)
 
 - hot spot analysis
 ![hot spot analysis ](./results/maps/activityclusters.png)
