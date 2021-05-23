@@ -46,7 +46,11 @@ The replication study by Holler (2021) used R, including the rtweet, rehydratoR,
 
 ## Materials and Procedure
 
-For this replication, I focused on activity related to tornadoes and floods in the southern plains of the United States. I used the following search query to obtain the  tweets.
+For this replication, I focused on activity related to tornadoes and floods in the southern plains of the United States.
+
+I used the methodology/ code provided by Holler (2021) to perform this analysis.
+
+Data was collected with the following search query:
 ```
 akflood = search_tweets("flooding OR drainage OR underwater
                         OR flash OR tornado OR tornadoes",
@@ -64,17 +68,23 @@ akflood = search_tweets("flooding OR drainage OR underwater
 | Flood/Tornado related tweets | akflood.txt | 78,144   |
 
 
-- These tweets were filtered for location inforation resulting in much smaller datasets, the filtered tweet ids can be found in the derived folder of the repository [here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public):
+- These tweets were filtered for location information resulting in much smaller datasets, the filtered tweet ids can be found in the derived folder of the repository [here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public):
 
-|          _Tweet type          |  **file name**  | **# tweets** |
+|          **Tweet type**          |  **file name**  | **# tweets** |
 |:----------------------------:|:-----------:|:--------:|
 |    Baseline Tweet Activity   |  mayids.txt | 8497  |
 | Flood/Tornado related tweets | akfloodids.txt | 4089   |
 
-**around 3.9 percent of tweets pulled were geocoded**
 
-- methods for analysis / synthesis
+      **around 3.9 percent of tweets pulled were geocoded**
 
+Data was normilized using population information from the US census accesed through the **tidycensus** R package.
+
+**note**: in order to reproduce or replicate this analysis you need to:
+  - [apply for a Twitter developer account here](https://developer.twitter.com/en/apply-for-access)
+  - [Apply for a cesus API key here](https://api.census.gov/data/key_signup.html)
+
+These credentials are necessary to access and utilize Twitter and Census data through their integration with R. 
 
 
 ## Replication Results
