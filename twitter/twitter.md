@@ -47,28 +47,35 @@ The replication study by Holler (2021) used R, including the rtweet, rehydratoR,
 ## Materials and Procedure
 
 For this replication, I focused on activity related to tornadoes and floods in the southern plains of the United States. I used the following search query to obtain the  tweets.
-```sql
-akflood = search_tweets("flooding OR drainage OR underwater OR flash OR tornado OR tornadoes",
+```
+akflood = search_tweets("flooding OR drainage OR underwater
+                        OR flash OR tornado OR tornadoes",
                        n=200000, include_rts=FALSE,
                        token=twitter_token,
                        geocode="36,-94,1000mi",
                        retryonratelimit=TRUE)
 ```                       
-- Click [Here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public) to download the tweet_ids for the tweets pulled with that query in early May, 2020.  
+- Click [Here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/raw/public) to download the tweet_ids for the tweets pulled with that query in early May, 2020.  
 
-|          Tweet type          |  file name  | # tweets |
+
+|          **Tweet type**          |  **file name**  | **# tweets** |
 |:----------------------------:|:-----------:|:--------:|
 |    Baseline Tweet Activity   |  mayids.txt | 215,985  |
 | Flood/Tornado related tweets | akflood.txt | 78,144   |
 
 
+- These tweets were filtered for location inforation resulting in much smaller datasets, the filtered tweet ids can be found in the derived folder of the repository [here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public):
 
+|          _Tweet type          |  **file name**  | **# tweets** |
+|:----------------------------:|:-----------:|:--------:|
+|    Baseline Tweet Activity   |  mayids.txt | 8497  |
+| Flood/Tornado related tweets | akfloodids.txt | 4089   |
 
+**around 3.9 percent of tweets pulled were geocoded**
 
-
-
-- any data used to normalize the tweets
 - methods for analysis / synthesis
+
+
 
 ## Replication Results
 
