@@ -12,9 +12,9 @@ and
 First replication study by Holler, J. 2021 (in preparation). Hurricane Dorian vs Sharpie Pen: an empirical test of social amplification of risk on social media.
 
 Replication Author:
-Your Name
+W. Steven Montilla Morantes
 
-Replication Materials Available at: [github repository name](github repository link)
+Replication Materials Available at: [Forked RE-Dorian repository](https://github.com/stevenmontilla/RE-Dorian)
 
 Created: `21 May 2021`
 Revised: `21 May 2021`
@@ -23,11 +23,13 @@ Revised: `21 May 2021`
 
 Why study the spatial distribution of Twitter data?
 
-Wang et al (2016) analyzed Twitter data for wildfires in California, finding that the social media data ...
+Nowadays, the use of social media platforms is extremely normalized. People continuously post information about their lives, their experiences, creations, etc... People react to what happens around them and resort to the internet to share it with everyone else. In many cases, social media has become a  way to receive help or spread awareness about an issue or event. For example, in march of 2020, Middlebury students started a mutual aid campaign on social media dedicated to helping peers secure housing or other necessities. Beyond what the users themselves can do to good with social media, there is much to be learned by the way users behave in space and time when stresses occur. In this way of looking at social media, we as researchers are not as interested in the individual context of a post, but on the dynamics and discourse of larger populations in the platform. Twitter is the perfect social media platform to study the behaviors of the population in the face of stresses, at least in the countries where it is widely used enough. From personal observation, the platform is set up to be candid, concise and highly engaging. Unlike other platforms such as Instagram, twitter users post more frequently and about a wider range of topics.
+
+Utilizing the unique data that twitter users generate, Wang et al (2016) studied Twitter activity related to wildfires in California, finding that the social media data can help characterize fires across space and time. Wang et al's methodology could also be used in a variety of contexts to characterize other hazards.
 
 Holler (2021) is studying Twitter data for Hurricane Dorian on the Atlantic coast, finding that in spite of tending news and social media content regarding a false narrative of risk, original Tweets still clustered significantly along the real hurricane track, and only along the hurricane track.
 
-Reproducing and replicating spatial research of .....  continues to be relevant because ....
+Reproducing and replicating spatial research of hazards done by Holler (2021) and Wang et al (2016) continues to be relevant because this approach to hazard characterization is fairly new. Thus, reproduction and replication of these sort of studies would help in the development of more robust methodologies to analyze big data from social media. 
 
 In his replication study, I will ...
 
