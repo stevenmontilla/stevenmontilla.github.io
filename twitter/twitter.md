@@ -35,21 +35,38 @@ In his replication study, I will be replicating Wang et al (2016) and Holler (20
 
 ## Original Study Information
 
-**summarize Wang et al (2016) similar to the Holler (2021) summary below**
+Wang et al (2016) developed a methodology to analyze twitter activity during wildfires around the San Diego area in May of 2014. They used the twitter search API to collect tweets that contained the words “wildfire” and “fire” and then a sub-set of tweet containing information about specific locations where fires occurred during that time frame. From the totality of tweets collected, they were only interested in those with geospatial information. They used the ‘coordinates’ field to filter out useless tweets. Having georeferenced tweets, they performed kernel density estimation to understand the spatial pattern of the tweets. This may represent a problem because areas with larger population may produce more twitter activity in general. Thus, the results may appear as a population map which would not provide useful information for the analysis. Therefore, they had to normalize it by making a dual kernel density estimation where the number of tweets in each unit of analysis was divided by its corresponding population value. They also conducted other analysis such as interaction networks or word analysis to understand how people where communicating about the fires.
 
-Holler (2021) losely replicated the methods of Wang et al (2016) for the case of Hurricane Dorian's landfall on the U.S. mainland during the 2019 Atlantic Hurricane season. Data was based on Twitter Search API queries for ....
+Holler (2021) loosely replicated the methods of Wang et al (2016) for the case of Hurricane Dorian's landfall on the U.S. mainland during the 2019 Atlantic Hurricane season. Data was based on Twitter Search API queries for the words "Dorian", "hurricane" or "sharpiegate". The replication materials for this analysis can be found in the same repository linked at the top of this page.
 
-Holler modified Wang et al's methods by not searching for retweets for network analysis, focusing instead on original Tweet content with keywords hurricane, Dorian, or sharpiegate (a trending hashtag referring to the storm). Holler modified the methodology for normalizing tweet data by creating a normalized Tweet difference index and extended teh methodology to test for spatial cluserting with the local Getis-Ord statistic. The study tested a hypothesis that false narratives of hurricane risk promulgated at the highest levels of the United States government would significantly distort the geographic distribution of Twitter activity related to the hurricane and its impacts, finding that original Twitter data still clustered only in the affected areas of the Atlantic coast in spite of false narratives about risk of a westward track through Alabama.
+Holler modified Wang et al's methods by not searching for retweets for network analysis, focusing instead on original Tweet content with keywords hurricane, Dorian, or sharpiegate (a trending hashtag referring to the storm). Holler modified the methodology for normalizing tweet data by creating a normalized Tweet difference index and extended the methodology to test for spatial clustering with the local Getis-Ord statistic. The study tested a hypothesis that false narratives of hurricane risk promulgated at the highest levels of the United States government would significantly distort the geographic distribution of Twitter activity related to the hurricane and its impacts, finding that original Twitter data still clustered only in the affected areas of the Atlantic coast in spite of false narratives about risk of a westward track through Alabama.
 
 Wang et al (2016) conducted their study using the `tm` and `igraph` packages in `R 3.1.2`. Is it known what GIS software was used for spatial analysis?
 The replication study by Holler (2021) used R, including the rtweet, rehydratoR, igraph, sf, and spdep packages for analysis.
 
 ## Materials and Procedure
 
-Outline the data to be used in your replication study, including:
+For this replication, I focused on activity related to tornadoes and floods in the southern plains of the United States. I used the following search query to obtain the  tweets.
+```sql
+akflood = search_tweets("flooding OR drainage OR underwater OR flash OR tornado OR tornadoes",
+                       n=200000, include_rts=FALSE,
+                       token=twitter_token,
+                       geocode="36,-94,1000mi",
+                       retryonratelimit=TRUE)
+```                       
+- Click [Here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public) to download the tweet_ids for the tweets pulled with that query in early May, 2020.  
 
-- twitter search parameters
-- attach / link to files containing status_id's for the search results
+|          Tweet type          |  file name  | # tweets |
+|:----------------------------:|:-----------:|:--------:|
+|    Baseline Tweet Activity   |  mayids.txt | 215,985  |
+| Flood/Tornado related tweets | akflood.txt | 78,144   |
+
+
+
+
+
+
+
 - any data used to normalize the tweets
 - methods for analysis / synthesis
 
