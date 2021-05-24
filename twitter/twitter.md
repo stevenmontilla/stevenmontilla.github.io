@@ -51,6 +51,7 @@ For this replication, I focused on activity related to tornadoes and floods in t
 I used the methodology/ code provided by Holler (2021) to perform this analysis.
 
 Data was collected with the following search query:
+<br>
 ```
 akflood = search_tweets("flooding OR drainage OR underwater
                         OR flash OR tornado OR tornadoes",
@@ -58,32 +59,35 @@ akflood = search_tweets("flooding OR drainage OR underwater
                        token=twitter_token,
                        geocode="36,-94,1000mi",
                        retryonratelimit=TRUE)
-```                       
+```
+<br>                       
 - Click [Here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/raw/public) to download the tweet_ids for the tweets pulled with that query in early May, 2020.  
-
+<br>
 
 |          **Tweet type**          |  **file name**  | **# tweets** |
 |:----------------------------:|:-----------:|:--------:|
 |    Baseline Tweet Activity   |  mayids.txt | 215,985  |
 | Flood/Tornado related tweets | akflood.txt | 78,144   |
-
+<br>
 
 - These tweets were filtered for location information resulting in much smaller datasets, the filtered tweet ids can be found in the derived folder of the repository [here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/derived/public):
+<br>
 
 |          **Tweet type**          |  **file name**  | **# tweets** |
 |:----------------------------:|:-----------:|:--------:|
 |    Baseline Tweet Activity   |  mayids.txt | 8497  |
 | Flood/Tornado related tweets | akfloodids.txt | 4089   |
+<br>
 
 
-      **around 3.9 percent of tweets pulled were geocoded**
-
-Data was normilized using population information from the US census accesed through the **tidycensus** R package.
-
+**around 3.9 percent of tweets pulled were geocoded**
+<br>
+Data was normilized using population information from the US census accessed through the **tidycensus** R package.
+<br>
 **note**: in order to reproduce or replicate this analysis you need to:
   - [Apply for a Twitter developer account here](https://developer.twitter.com/en/apply-for-access)
   - [Apply for a cesus API key here](https://api.census.gov/data/key_signup.html)
-
+<br>
 These credentials are necessary to access and utilize Twitter and Census data through their integration with R.
 
 
@@ -91,30 +95,36 @@ These credentials are necessary to access and utilize Twitter and Census data th
 
 ![temporal analysis graph](./results/figures/tweets_by_hour_akflood.png)
 Figure 1. Temporal Analysis
+<br>
 ![content analysis graph](./results/figures/word_network_akflood.png)
 Figure 2. Word network of tweet content
+<br>
 ![word rank](./results/figures/word_rank.png)
 Figure 3. Top words used in tweets not taking into account stop words.
+<br>
 ![word rank cleaned](./results/figures/word_rank_cleaned.png)
 Figure 4. Top words used in tweets not taking into account extended stop words list.
+<br>
 ![tweet distribution](./results/maps/tweet_distribution.png)
 Figure 5. Spatial distribution of twitter activity
+<br>
 ![hot spot analysis ](./results/maps/activityclusters.png)
+<br>
 Figure 6. Spatial distribution of significant clusters of tornado/flood twitter activity.
-
+<br>
 ## Unplanned Deviations from the Protocol
 
 When conducting the Contextual/Text analysis, I appended more words to the stop word list to improve the contents of the word rank. As seen in figure 3, many of the most used words referred to numbers and time. Appending most of the numbers and time zone abbreviations to the stop word list resulted in a cleaner version of the word rank that unveiled other important words in the general discourse such as 'storm', 'emergency', and locations such as 'tx', 'ky','al' and 'tn'
 
 Both the first and second versions of this graph can be seen above in Fig. 3 and Fig. 4.
-
+<br>
 ## Discussion
 
 Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2021)
 
-The spatial distribution of significant clusters of activity related to tornadoes in early May correlated with the [locations of the tornado outbreak of May 2-4, 2021](https://en.wikipedia.org/wiki/Tornado_outbreak_of_May_2%E2%80%934,_2021). Therefore, the results of this replication are consistent with those of Wang et al (2016), Holler (2021) in that there were significant activity clusters in the areas affected by the tornado outbreak.
+The spatial distribution of significant clusters of activity related to tornadoes in early May correlated with the [locations of the tornado outbreak of May 2-4, 2021](https://en.wikipedia.org/wiki/Tornado_outbreak_of_May_2%E2%80%934,_2021). Therefore, the results of this replication are consistent with those of Wang et al (2016), Holler (2021) in that there were significant activity clusters in the areas affected by the tornado outbreak. It was surprising to see that even smaller and dissipated hazard events would still create significant activity clusters given that Holler (2021) studied a much larger phenomenon, with more media attention and a vast geographical trajectory.
 
-In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to soatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' communicated other responses associated with the outbreak. 
+In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to spatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' communicated other responses associated with the outbreak.
 
 
 ## Conclusion
