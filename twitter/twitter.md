@@ -85,7 +85,7 @@ akflood = search_tweets("flooding OR drainage OR underwater
 
 
  - **around 3.9 percent of tweets pulled were geocoded**
- 
+
 <br>
 
 Data was normilized using population information from the US census accessed through the **tidycensus** R package.
@@ -132,11 +132,13 @@ The spatial distribution of significant clusters of activity related to tornadoe
 
 In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to spatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' and other phrases seen in Fig 2. such as 'seek'--'shelter'; 'call'--'911'; 'flood'--'warning'--'continues'.
 
+Finally, it would be worth to mention that epistemic uncertainty may have been introduced in the selection of words for the initial query for this analysis. Possibly, the inclusion of somewhat vague words such as 'flash', 'underwater' could have added a number of irrelevant tweets to the analysis. Even though the rational for including these words was based on their appearance on several tweets related to the situation, these words could also be used in completely different contexts. Finally, querying for both flooding events and tornados may have also weakened the strength of the activity clusters, as these events were not necessarily happening in all areas affected by the tornadoes and vice-versa.
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
+The goal of this study was to replicate the approaches developed by Wang et al. (2016) and replicated by Holler (2021) in the context of the recent tornado outbreak in the southern plains of the United States. As Wang et al. (2016) and Holler (2021) concluded, the analysis of twitter activity was accurate in characterizing the spatial and temporal properties of the event. In this case, the significant activity clusters correlated with recorded tornado events in the region. However, the magnitude of these clusters may have been affected by epistemic uncertainty introduced in the analysis when creating the original query to gather the data. Therefore, it would be useful to reproduce this analysis with the slight modification of improving the original query to less context dependent words.
+
+
 
 ## References
 
