@@ -3,15 +3,6 @@ title: Humanitarian GIS
 layout: page
 ---
 
+Different platforms such as Open Street Map and most social media platforms collect volunteered geographic information from their users. In the case of social media platforms, they usually get away with having your information by requiring the user to agree to Privacy Policies that are often complicated and time-consuming to read. Thus, it could be argued that the data collected by these platforms is not necessarily volunteered but unknowingly collected from users. In contrast, in other platforms, such as iNaturalist, the users actively choose to share information often knowing its relevant use in studying the distribution and migration of species. Thus, the terms in which the data are collected are less problematic in my opinion.
 
-Consider the Craford & Finn (2014) article and any of the crowd-sourced / volunteered geographic information (VGI) you have already worked with personally (e.g. Twitter, OpenStreetMap) in relation to Longley et al’s framework of uncertainty filters in the process of geograaphic research.
-
-What types of uncertainty are most prevalant in the use of VGI for research on disasters and humanitarian crises?
-
-Do you think that there is any ethical obligation in relation to uncertainty?
-
-Or, do you think that there are ethical concerns in using VGI that complicate uncertainty?
-
-Different platforms such as Open Street Map, iNaturalist and most social media platforms collect volunteered geographic information from their users. In the case of social media platforms, they usually get away with having your information by requiring the user to agree to Privacy Policies that are often complicated and time-consuming to read. Thus, it could be argued that the data collected by these platforms is not necessarily volunteered but unknowingly collected from users.
-
-Beyond the ethical debate on whether or not an user gives their data voluntarily or it is collected with questionable consent, there are other issues related to uncertainty that come from using crowd-sourced data for crisis analysis. As mentioned in my previous blog post,
+Beyond the ethical debate on whether or not an user gives their data voluntarily or it is collected with questionable consent, there are other issues related to uncertainty that come from using crowd-sourced data for crisis analysis. Firstly, it is important to question who is generating the data. Given that not everyone has access to devices, and not everyone is on social media, it is a fundamental issue to understand who is producing the data, and if that can bias the analysis that we are conducting. For example, in only wealthy members of a place have access to social media and they are exposed to a hazard, its characterization based on the crowd-sourced data will be biased towards the experiences of the wealthy. This would be introduce epistemic uncertainty because a portion of the information related to the event would be left out. Similarly, in the iNaturalist datasets there is considerably more data about birds than any other species, and usually in developed countries where there is generally more research happening. However, those data sets are not necessarily representative of the distribution and abundance of species of birds worldwide because there is a lack of representation from other areas of the world.
