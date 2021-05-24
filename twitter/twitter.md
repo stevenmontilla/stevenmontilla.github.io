@@ -84,8 +84,10 @@ akflood = search_tweets("flooding OR drainage OR underwater
 <br>
 
 
-**around 3.9 percent of tweets pulled were geocoded**
+ - **around 3.9 percent of tweets pulled were geocoded**
+ 
 <br>
+
 Data was normilized using population information from the US census accessed through the **tidycensus** R package.
 <br>
 **note**: in order to reproduce or replicate this analysis you need to:
