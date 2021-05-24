@@ -124,7 +124,7 @@ Provide a summary and interpretation of your key findings in relation to your re
 
 The spatial distribution of significant clusters of activity related to tornadoes in early May correlated with the [locations of the tornado outbreak of May 2-4, 2021](https://en.wikipedia.org/wiki/Tornado_outbreak_of_May_2%E2%80%934,_2021). Therefore, the results of this replication are consistent with those of Wang et al (2016), Holler (2021) in that there were significant activity clusters in the areas affected by the tornado outbreak. It was surprising to see that even smaller and dissipated hazard events would still create significant activity clusters given that Holler (2021) studied a much larger phenomenon, with more media attention and a vast geographical trajectory.
 
-In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to spatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' communicated other responses associated with the outbreak.
+In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to spatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' and other phrases seen in Fig 2. such as 'seek'--'shelter'; 'call'--'911'; 'flood'--'warning'--'continues'. 
 
 
 ## Conclusion
