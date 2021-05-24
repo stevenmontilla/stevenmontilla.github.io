@@ -81,7 +81,7 @@ akflood = search_tweets("flooding OR drainage OR underwater
 Data was normilized using population information from the US census accesed through the **tidycensus** R package.
 
 **note**: in order to reproduce or replicate this analysis you need to:
-  - [apply for a Twitter developer account here](https://developer.twitter.com/en/apply-for-access)
+  - [Apply for a Twitter developer account here](https://developer.twitter.com/en/apply-for-access)
   - [Apply for a cesus API key here](https://api.census.gov/data/key_signup.html)
 
 These credentials are necessary to access and utilize Twitter and Census data through their integration with R.
@@ -106,7 +106,9 @@ Figure 6. Spatial distribution of significant clusters of tornado/flood twitter 
 
 ## Unplanned Deviations from the Protocol
 
-When conducting the Contextual/Text analysis, I appended more words to the stop word list to improve the contents of the word rank. As seen in F
+When conducting the Contextual/Text analysis, I appended more words to the stop word list to improve the contents of the word rank. As seen in figure 3, many of the most used words referred to numbers and time. Appending most of the numbers and time zone abbreviations to the stop word list resulted in a cleaner version of the word rank that unveiled other important words in the general discourse such as 'storm', 'emergency', and locations such as 'tx', 'ky','al' and 'tn'
+
+Both the first and second versions of this graph can be seen above in Fig. 3 and Fig. 4.
 
 ## Discussion
 
