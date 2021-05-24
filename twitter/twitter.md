@@ -138,11 +138,8 @@ Finally, it would be worth to mention that epistemic uncertainty may have been i
 
 The goal of this study was to replicate the approaches developed by Wang et al. (2016) and replicated by Holler (2021) in the context of the recent tornado outbreak in the southern plains of the United States. As Wang et al. (2016) and Holler (2021) concluded, the analysis of twitter activity was accurate in characterizing the spatial and temporal properties of the event. In this case, the significant activity clusters correlated with recorded tornado events in the region. However, the magnitude of these clusters may have been affected by epistemic uncertainty introduced in the analysis when creating the original query to gather the data. Therefore, it would be useful to reproduce this analysis with the slight modification of improving the original query to less context dependent words.
 
-
-
-## References
-
-Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
+## Acknowledgements
+  Thanks to Prof. Holler for providing the base R script in which this analysis is based. Thanks to Jackson Mumper with whom I worked closely in lab to understand the code and methodology and Maddie Tango for answering my questions and being always happy to help. 
 
 ####  Report Template References & License
 
