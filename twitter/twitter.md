@@ -89,10 +89,8 @@ These credentials are necessary to access and utilize Twitter and Census data th
 
 ## Replication Results
 
-
 ![temporal analysis graph](./results/figures/tweets_by_hour_akflood.png)
 Figure 1. Temporal Analysis
-
 ![content analysis graph](./results/figures/word_network_akflood.png)
 Figure 2. Word network of tweet content
 ![word rank](./results/figures/word_rank.png)
