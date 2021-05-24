@@ -84,31 +84,29 @@ Data was normilized using population information from the US census accesed thro
   - [apply for a Twitter developer account here](https://developer.twitter.com/en/apply-for-access)
   - [Apply for a cesus API key here](https://api.census.gov/data/key_signup.html)
 
-These credentials are necessary to access and utilize Twitter and Census data through their integration with R. 
+These credentials are necessary to access and utilize Twitter and Census data through their integration with R.
 
 
 ## Replication Results
 
-- temporal analysis graph
-![temporal analysis graph](./results/figures/tweets_by_hour_akflood.png)
 
-- content analysis graph
+![temporal analysis graph](./results/figures/tweets_by_hour_akflood.png)
+Figure 1. Temporal Analysis
 
 ![content analysis graph](./results/figures/word_network_akflood.png)
+Figure 2. Word network of tweet content
 ![word rank](./results/figures/word_rank.png)
+Figure 3. Top words used in tweets not taking into account stop words.
 ![word rank cleaned](./results/figures/word_rank_cleaned.png)
-
-- map of twitter activity
+Figure 4. Top words used in tweets not taking into account extended stop words list.
 ![tweet distribution](./results/maps/tweet_distribution.png)
-
-- hot spot analysis
+Figure 5. Spatial distribution of twitter activity
 ![hot spot analysis ](./results/maps/activityclusters.png)
+Figure 6. Spatial distribution of significant clusters of tornado/flood twitter activity.
 
 ## Unplanned Deviations from the Protocol
 
-Summarize changes and uncertainties between
-- your expectation of a reproduction workflow based on the reading and Dorian analysis
-- your final workflow after completing the lab
+When conducting the Contextual/Text analysis, I appended more words to the stop word list to improve the contents of the word rank. As seen in F
 
 ## Discussion
 
