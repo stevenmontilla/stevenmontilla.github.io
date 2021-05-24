@@ -21,7 +21,9 @@ Revised: `21 May 2021`
 
 ## Abstract
 
-Nowadays, the use of social media platforms is extremely normalized. People continuously post information about their lives, their experiences, creations, etc... People react to what happens around them and resort to the internet to share it with everyone else. In many cases, social media has become a  way to receive help or spread awareness about an issue or event. For example, in march of 2020, Middlebury students started a mutual aid campaign on social media dedicated to helping peers secure housing or other necessities. Beyond what the users themselves can do to good with social media, there is much to be learned by the way users behave in space and time when stresses occur. In this way of looking at social media, we as researchers are not as interested in the individual context of a post, but on the dynamics and discourse of larger populations in the platform. Twitter is the perfect social media platform to study the behaviors of the population in the face of stresses, at least in the countries where it is widely used enough. From personal observation, the platform is set up to be candid, concise and highly engaging. Unlike other platforms such as Instagram, twitter users post more frequently and about a wider range of topics.
+Nowadays, the use of social media platforms is extremely normalized. People continuously post information about their lives, their experiences, creations, etc... They react to what happens around them and resort to the internet to share it with everyone else. In many cases, social media has become a  way to receive help or spread awareness about an issue or event. For example, in march of 2020, Middlebury students started a mutual aid campaign on social media dedicated to helping peers secure housing or other securities that they lost due to the pandemic.
+
+Beyond what the users themselves can do to good with social media, there is much to be learned from the way users behave in space and time when stresses occur. In this way of looking at social media, we as researchers are not as interested in the individual context of a post, but on the dynamics and discourse of larger populations in the platform. Twitter is a specially useful social media platform to study the behaviors of the population in the face of stresses, at least in the countries where it is widely used enough. From personal observation, the platform is set up to be candid, concise and highly engaging. Unlike other platforms such as Instagram, twitter users post more frequently and about a wider range of topics. However, as Crawford & Finn (2015) discuss, analysis done with twitter data may provide valuable insights, but there needs to be recognition of the biases and uncertainty introduced by the way the twitter algorithm works and how it lets its users interact with information.
 
 Utilizing the unique data that twitter users generate, Wang et al (2016) studied Twitter activity related to wildfires in California, finding that the social media data can help characterize fires across space and time. Wang et al's methodology could also be used in a variety of contexts to characterize other hazards.
 
@@ -123,6 +125,7 @@ Figure 6. Spatial distribution of significant clusters of tornado/flood twitter 
 When conducting the Contextual/Text analysis, I appended more words to the stop word list to improve the contents of the word rank. As seen in figure 3, many of the most used words referred to numbers and time. Appending most of the numbers and time zone abbreviations to the stop word list resulted in a cleaner version of the word rank that unveiled other important words in the general discourse such as 'storm', 'emergency', and locations such as 'tx', 'ky','al' and 'tn'
 
 Both the first and second versions of this graph can be seen above in Fig. 3 and Fig. 4.
+
 <br>
 ## Discussion
 
@@ -139,7 +142,7 @@ Finally, it would be worth to mention that epistemic uncertainty may have been i
 The goal of this study was to replicate the approaches developed by Wang et al. (2016) and replicated by Holler (2021) in the context of the recent tornado outbreak in the southern plains of the United States. As Wang et al. (2016) and Holler (2021) concluded, the analysis of twitter activity was accurate in characterizing the spatial and temporal properties of the event. In this case, the significant activity clusters correlated with recorded tornado events in the region. However, the magnitude of these clusters may have been affected by epistemic uncertainty introduced in the analysis when creating the original query to gather the data. Therefore, it would be useful to reproduce this analysis with the slight modification of improving the original query to less context dependent words.
 
 ## Acknowledgements
-  Thanks to Prof. Holler for providing the base R script in which this analysis is based. Thanks to Jackson Mumper with whom I worked closely in lab to understand the code and methodology and Maddie Tango for answering my questions and being always happy to help. 
+  Thanks to Prof. Holler for providing the base R script in which this analysis is based. Thanks to Jackson Mumper with whom I worked closely in lab to understand the code and methodology and Maddie Tango for answering my questions and being always happy to help.
 
 ####  Report Template References & License
 
