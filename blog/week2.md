@@ -1,6 +1,6 @@
 ---
 title: Blog week 2
-layout: default
+layout: page
 ---
 [Return to main page](https://stevenmontilla.github.io)
 ## GIS as a science, a tool and toolmaking

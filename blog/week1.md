@@ -1,6 +1,6 @@
 ---
 title: Blog week 1
-layout: default
+layout: page
 ---
 [Return to main page](https://stevenmontilla.github.io)
 ## What is Open GIScience?

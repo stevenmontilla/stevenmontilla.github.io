@@ -1,6 +1,6 @@
 ---
 title: Error and Uncertainty
-layout: default
+layout: page
 ---
 
 Representing our world through maps has always brought problems. As Longley et al. (2008) state, "it is impossible to make a perfect representation of the world, so uncertainty about it is inevitable". A simple example is the world map; there is no possible way of representing our spheric world in a flat surface without compromising the size, the shape of the land or the distance between two points. Nevertheless, these uncertain or innacurate representions of our world may still be useful to us.

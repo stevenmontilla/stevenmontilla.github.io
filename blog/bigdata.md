@@ -1,4 +1,9 @@
 ---
 title: Big Data
-layout: default
+layout: page
 ---
+Please summarize your thoughts in a blog post in preparation for debates on May 14. See the May 14 page for guidance on blog post content.
+
+Dr. Mei-Po Kwan gave a [talk](https://www.youtube.com/watch?v=hDpa3c5ljsA) for the American Geographical Society's Location Tech Task Force where she discusses the tension between disease mitigation and privacy concerns . Nowadays, a big portion of the population carries mobile devices with integrated Global Positioning Systems. Therefore, from a public health point of view, it would be ideal if health authorities could identify people infected with an infectious disease, such as COVID-19, to reduce the spread of the disease. However, this would entail the use and possession of very private data that in a short amount of time could be used to reverse geocode the places where a person lives, works, recreates, etc.
+
+I found the idea of geo-narratives particularly interesting and useful in highlighting the experience of vulnerable people without having to compromise the privacy of any individual. As Dr. Kwan mentions, geo-narratives can be use to shed light on and preserve the experiences of ordinary people with the place and their interaction. They can be used to complement the power of GIS with more qualitative information. Nonetheless, researchers and the people who generate and have access to the raw-data of geo-narratives must be particularly careful in generalizing the qualitative information, and introducing error in the geographical information to ensure the privacy of the subjects of study. This is extremely important, not only because everyone has a right to privacy and specifically geo-privacy, but also because releasing such detailed information about a vulnerable population may increase their vulnerability. 
