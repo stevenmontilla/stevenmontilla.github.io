@@ -1,9 +1,9 @@
 ---
-title: Steven Montilla's Open Source GIS portfolio
+title: Steven Montilla
 layout: default
 ---
 
-# Welcome to my portfolio!
+# Welcome to my Open Source GIS portfolio!
 Hi, I am Steven, a third year student of Geography and Environmental Studies at Middlebury College!
 You can find my Open Source GIS work on this page :)
 
