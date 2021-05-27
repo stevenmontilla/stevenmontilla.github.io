@@ -70,29 +70,34 @@ Fig 4. Percent slope model
 #### Digitizing of River Banks and Valley width
 
   I digitized the bankfull channel and valley channel using the elevation and slope models at a scale of 1:1500. This process was done three times, alternating between digitizing the bank and the valley to reduce the impact of muscle memory. Centerlines were calculated from each set of channel lines, which then were averaged into a mean stream bank centerline (Fig. 5) and a mean valley centerline (Fig. 6) using **[this model](procedure\code\center_line_length.gxm)**.
-##### small deviation
-In my case, I re-digitized the channels after noticing that my digitization was very well off the real course of the river using Google Earth Pro to look at imagery from 2007 (the closest to the date of data collection of CHaMP data - 2012). The second digitization yielded more similar results to the Kasprak et al.(2016) classification.  
-
+##### Troubles digitizing
+In my case, I re-digitized the channels after noticing that my digitization was  well off the real course of the river. I used Google Earth Pro to look at imagery from 2007 (the closest to the date of data collection of CHaMP data - 2012). The second digitization yielded more similar results to the Kasprak et al.(2016) classification. Nevertheless, looking back at my work, I did not have the correct map for elevation while I was digitizing, which made it harder and more confusing to do. When I fixed the elevation map, the river channels became much more apparent than what I was seeing in the first map I made. However, I was not able to re-digitize the river due to time constraints. However, I will be more attentive to having the correct elevation and slope models before starting digitization in the future.  
+<br>
  ![Stream Lines](results\maps\streamLines.png)
  Fig 5. Stream centerline average and uncertainty
-
+<br>
  ![Valley Lines](results\maps\valleylines.png)
+ <br>
  Fig 6. Valley centerline average and uncertainty
-
+<br>
 ![Longitudinal Profile](results\figures\LongitudinalProfileGraph.png)
+<br>
  Fig 7. Longitudinal Profile
-
+<br>
 ![cross-sectional](results\figures\crossectionalprofileZoomOut.png)
+<br>
  Figure 8. cross-sectional profile of Valley near CHaMP Loc_ID 08  
-
+<br>
 ![cross-sectional zoomed in](results\figures\crossectionalprofileZoomIn.png)
+<br>
 Figure 8. cross-sectional profile of banks near CHaMP Loc_ID 08  
-
+<br>
 #### Calculation on ratios
 According to the Rosgen classification schema, in order to classify a stream you need the
 entrenchment ratio, width to depth ration and the sinuosity. The following table summarizes where the data to calculate these ratios came from.
 
 Table 1. Site Measurements
+<br>
 
 | Variable                                  | Value      | Source                     |
 |-------------------------------------------|------------|----------------------------|
@@ -109,6 +114,8 @@ Table 1. Site Measurements
 The following tables and figure summarize the results. Essentially, the Granite Boulder Creek was classified as stream type **C4b**
 
 Table 2. Rosgen Level I Classification
+<br>
+
 
 |       Criteria      |    Value    |
 |:-------------------:|:-----------:|
@@ -118,21 +125,27 @@ Table 2. Rosgen Level I Classification
 | Level I Stream Type |    **C**    |
 
 Table 3. Rosgen Level II Classification
+<br>
+
 
 |       Criteria       |  Value  |
 |:--------------------:|:-------:|
 |         Slope        | 0.03205 |
 |   Channel Material   |  Gravel |
 | Level II Stream Type | **C4b** |
+<br>
 
 ![Elevation](results\figures\rosgen_classification.jpg)
+<br>
 Fig.6 Rosgen schema with highlighted categories.
+<br>
 
 ### Discussion
 
 The Boulder Granite Creek at this site was classified as a C4b stream which is in agreement to Kasprak's classification (Kasprak et al, 2016). As seen in Table 2 and Figure 6, all the entrenchment and width to depth ratios fell within the ranges established by the Rosgen key. I calculated a sinuosity value of 1.16 that fell short of the > 1.2 required for the **C** stream type. However, for  the sinuosity value, the Rosgen classification specifies that entrenchment and sinuosity can be within a +/- 0.2 error margin. Taking this margin into account would bring my sinuosity value to 1.18 which could be rounded to 1.2, marginally less than the > 1.2 required to be classified as a stream type C. I decided to still go through with classifying this stream as type **C** because the small margin could be accounted for by errors in digitization that could result in lower sinuosity values. Specifically, it was difficult to know exactly the course of the stream using the elevation model which could have lead to an oversimplification of the curvature of the stream, resulting in lower sinuosity values.  Moreover, the Rosgen key does not provide any alternatives for a sinuosity lower than 1.2 with the values for width to depth and entrenchment ratios shown in table 2.
 
 For the Level II classification, the percent slope was within the range established. Moreover, we were not able to collect our own channel material data, so we used the one registered by the CHaMP.
+<br>
 
 ### Conclusions
 
