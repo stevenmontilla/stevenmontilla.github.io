@@ -63,14 +63,13 @@ akflood = search_tweets("flooding OR drainage OR underwater
                        retryonratelimit=TRUE)
 ```
 <br>                       
-- Click [Here](https://github.com/stevenmontilla/RE-Dorian/tree/main/data/raw/public) to download the tweet_ids for the tweets pulled with that query in early May, 2020.  
+- Click in the table below to download the tweet_ids for the tweets pulled with that query in early May, 2020.
 <br>
-
 
 |          **Tweet type**          |  **file name**  | **# tweets** |
 |:----------------------------:|:-----------:|:--------:|
-|    Baseline Tweet Activity   |  mayids.txt | 215,985  |
-| Flood/Tornado related tweets | akflood.txt | 78,144   |
+|    Baseline Tweet Activity   |  [mayids.txt](https://github.com/stevenmontilla/RE-Dorian/blob/main/data/raw/public/mayids.txt) | 215,985  |
+| Flood/Tornado related tweets | [akflood.txt](https://github.com/stevenmontilla/RE-Dorian/blob/main/data/raw/public/akfloodids.txt) | 78,144   |
 
 <br>
 
@@ -129,13 +128,11 @@ Both the first and second versions of this graph can be seen above in Fig. 3 and
 <br>
 ## Discussion
 
-Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2021)
-
 The spatial distribution of significant clusters of activity related to tornadoes in early May correlated with the [locations of the tornado outbreak of May 2-4, 2021](https://en.wikipedia.org/wiki/Tornado_outbreak_of_May_2%E2%80%934,_2021). Therefore, the results of this replication are consistent with those of Wang et al (2016), Holler (2021) in that there were significant activity clusters in the areas affected by the tornado outbreak. It was surprising to see that even smaller and dissipated hazard events would still create significant activity clusters given that Holler (2021) studied a much larger phenomenon, with more media attention and a vast geographical trajectory.
 
 In terms of the contextual tweet analysis, it appears to be that the majority of tweets focused on providing times and locations. As seen in figure 3 and 4, many of the top words such as 'cdt', '00','30','pm' described the temporal characteristics of the events. Words such as 'tx', 'tn', 'al','ky' referred to spatial characteristics of the outbreak. Finally, the use of words such 'emergency' and 'warning' and other phrases seen in Fig 2. such as 'seek'--'shelter'; 'call'--'911'; 'flood'--'warning'--'continues'.
 
-Finally, it would be worth to mention that epistemic uncertainty may have been introduced in the selection of words for the initial query for this analysis. Possibly, the inclusion of somewhat vague words such as 'flash', 'underwater' could have added a number of irrelevant tweets to the analysis. Even though the rational for including these words was based on their appearance on several tweets related to the situation, these words could also be used in completely different contexts. Finally, querying for both flooding events and tornados may have also weakened the strength of the activity clusters, as these events were not necessarily happening in all areas affected by the tornadoes and vice-versa.
+Finally, it would be worth to mention that epistemic uncertainty may have been introduced in the selection of words for the initial query for this analysis. Possibly, the inclusion of somewhat vague words such as 'flash', 'underwater' could have added a number of irrelevant tweets to the analysis. Even though the rational for including these words was based on their appearance on several tweets related to the situation, these words could also be used in completely different contexts. Finally, querying for both flooding events and tornados may have also reduced the ability to know for sure whether the cluster is related to a tornado or a flood. However, querying for both types of activity created a larger pool of disaster related tweets that may have improved the detection of activity clusters. 
 
 ## Conclusion
 
