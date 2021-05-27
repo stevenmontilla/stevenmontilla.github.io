@@ -166,8 +166,36 @@ Data Input: UNEP/grid Europe, Famine early warning network → ***Raster*** → 
 1. Add all RASTERs together to calculate final output: final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20
 1. Use zonal statistics to aggregate raster to TA geometry for final calculation of vulnerability in each traditional authority
 
-Besides what is above, we added the variables for the Livelihood zones procedures and the  methodology for comparison with Malcomb et al's results.
+### Final version
+After compiling the missing data for Livelihood Sensitivity, we integrated it to the analysis following this **final version** of the workflow:
 
+1. Data Preprocessing:
+1. Download traditional authorities: MWI_adm2.shp
+1. Adding TA and LZ ids to DHS clusters
+1. Removing HH entries with invalid or unknown values
+1. Aggregating HH data to DHS clusters, and then joining to traditional authorities to get: ta_capacity_2010
+1. Removing index and livestock values that were NA
+1. Sum of livestock by HH
+1. Scale adaptive capacity fields (from DHS data) on scale of 1 - 5 to match Malcomb et al.
+1. Weight capacity based on Table 2 in Malcomb et al.
+1. 1. Calculate capacity by summing all weighted capacity fields
+1. Summarize capacity from households to traditional authorities
+1. Joining mean capacities to TA polygon layer
+1. Making capacity score resemble Malcomb et al.’s work (scores on range of 0-20) by multiplying capacity score by 20
+1. Categorizing capacities using natural jenks methods
+1. Creating blank raster and setting extent of Malawi - CRS: 4326
+1. Reproject, clip and resampling flood risk and drought exposure rasters to new extent and cell size
+  - Uses bilinear resampling for drought to average continuous population exposure values
+  - Uses nearest neighbor resampling for flood risk to preserve integer values
+  - Removing factors and recasting them as integers
+  - Clipping TAs with LZs to remove lake
+  - Rasterizing final TA capacity layer
+1. Masking flood and drought layers
+1. Reclassify drought raster into quantiles
+1. Add all RASTERs together to calculate final output: final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20 + livelihood sensitivity * 0.20
+1. Using zonal statistics to aggregate raster to TA geometry for final calculation of vulnerability in each traditional authority
+
+Finally, the results of the reproduction and the original study were compared using a couple of methods. To compare the choropleth adaptive capacity maps we generated a confusion matrix and calculated Spearman's rho coefficient. For the raster vulnerability maps, we plotted the values of each cell in Figure 6. below. Perfect agreement would have resulted in alignment of all the points along the diagonal, but there was little agreement thus the messy graph and the low spearman's rho coefficient.
 
 ## Reproduction Results
 
