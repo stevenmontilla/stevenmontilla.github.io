@@ -16,14 +16,12 @@ Created: `24 March 2021`
 Revised: `9 April 2021`
 
 ### Introduction
-Developing a classification schema for rivers and streams is a hard task. The everchanging nature of these systems as well as the practicality to take measurements on the field are limitations to river classification. The various classifications methods available may also produce different results on the same river. Therefore, Kasprak et al. (2016) were motivated to conduct a direct comparison between 4 different classification frameworks to analyze their agreements and discrepancies.
+
+The classification of rivers and streams is important to understand their diversity and distribution (Kasprak et al. 2016). General characterizations of fluvial bodies can serve as an important tool to develop conservation, management and restorations plans (Kasprak et al. 2016). However, developing a classification schema for rivers and streams is a hard task. The everchanging nature of these systems as well as the practicality to take measurements on the field are limitations to river classification. The various classifications methods available may also produce different results on the same river. Therefore, Kasprak et al. (2016) were motivated to conduct a direct comparison between 4 different classification frameworks to analyze their agreements and discrepancies.
 
 Kasprak et al (2016) conducted their study in the Middle Fork John Day Basin within the Columbia River Basin in Oregon, USA. They classified rivers/ streams on 33 sites using the River Styles Framework, Natural Channel Classification, Rosgen Classification System, and a channel form-based statistical classification.
 
 As a class, we replicated the Rosgen classification portion of the Kasprak et al (2016) study. Each student was assigned one of the 33 sites to carry out the replication of the Rosgen classification. I was assigned Loc_ID 8, Granite Boulder Creek.
-
-EXPAND ON ROSGEN CLASS HERE AND CITE PAPER
-
 
 ### Data
 [**ALL DATA/ Metadata CAN BE FOUND HERE**](data)
@@ -57,16 +55,16 @@ Figure 1. Rosgen Classification System.
 #### Processing of Raster Data
 ##### Step by step protocols can be found [here](procedure\protocols\1-Research_Protocol_GRASS.pdf)
 
-Raster Lidar data was processed using **[this model](procedure\code\visualize.gxm)** to visualize elevation (Fig. 3) and % slope (Fig. 4) following the workflow seen in Fig 2. Note that the rasters were reclassified and colorized in QGIS to provide more contrast within the study site. This model also produces a buffer with a radius of 20 channel widths, which will serve as our area of interest.
+Raster Lidar data was processed using **[this model](procedure\code\visualize.gxm)** to visualize elevation (Fig. 3) and Percent slope (Fig. 4) following the workflow seen in Fig 2. Note that the rasters were reclassified and colorized in QGIS to provide more contrast within the study site. This model also produces a buffer with a radius of 20 channel widths, which will serve as our area of interest.
 
 ![visualize workflow](docs\instruction\instructor_materials\visualize_model.png)
-Fig 3. Shaded elevation model
+Fig 2. Visualization workflow
 
-![Elevation](results\maps\ShadedElevation.png)
+![Elevation](results\maps\elevation_loc8.png)
 Fig 3. Shaded elevation model
 
 ![Slope](results\maps\SlopeGranite.png)
-Fig 4. %Slope model
+Fig 4. Percent slope model
 
 
 #### Digitizing of River Banks and Valley width
@@ -134,7 +132,7 @@ Fig.6 Rosgen schema with highlighted categories.
 
 The Boulder Granite Creek at this site was classified as a C4b stream which is in agreement to Kasprak's classification (Kasprak et al, 2016). As seen in Table 2 and Figure 6, all the entrenchment and width to depth ratios fell within the ranges established by the Rosgen key. I calculated a sinuosity value of 1.16 that fell short of the > 1.2 required for the **C** stream type. However, for  the sinuosity value, the Rosgen classification specifies that entrenchment and sinuosity can be within a +/- 0.2 error margin. Taking this margin into account would bring my sinuosity value to 1.18 which could be rounded to 1.2, marginally less than the > 1.2 required to be classified as a stream type C. I decided to still go through with classifying this stream as type **C** because the small margin could be accounted for by errors in digitization that could result in lower sinuosity values. Specifically, it was difficult to know exactly the course of the stream using the elevation model which could have lead to an oversimplification of the curvature of the stream, resulting in lower sinuosity values.  Moreover, the Rosgen key does not provide any alternatives for a sinuosity lower than 1.2 with the values for width to depth and entrenchment ratios shown in table 2.
 
-For the Level II classification, the % slope was within the range established. Moreover, we were not able to collect our own channel material data, so we used the one registered by the CHaMP.
+For the Level II classification, the percent slope was within the range established. Moreover, we were not able to collect our own channel material data, so we used the one registered by the CHaMP.
 
 ### Conclusions
 
