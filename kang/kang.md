@@ -27,7 +27,7 @@ Kang et al. (2020) developed a replicable methodology to assess accessibility to
 ![kang result](img/ChicagoResult.png)
 ![reproduction result](img/modified_script_result.png)
 
-![improved figure](img/chicahgohospitals_improved_25_classes)
+![improved figure](img/chicahgohospitals_improved_25_classes.png)
 
 
 - need to include preprocessing of hospital data to match what they wrote in the paper.
