@@ -2,11 +2,12 @@
 layout: page
 title: Flood Vulnerability in Dar-es-Salaam
 ---
-
 Created: `7  April 2021`
 Revised: `7 April 2021`
 
-#Flood Vulnerability in Dar-es-Salaam
+### Introduction
+
+So far our analysis of flood vulnerability was limited to the whether or not a home was in a flood zone. While digging through the data available for the city of Dar-es-Salaam, I noticed that there was information about the building materials of homes. Thus, I hypothesized that homes built with weaker material AND located within flood zones would be more vulnerable to flood than houses built with more robust materials and located outside of flood zones.Therefore, I developed a flood vulnerability score framework in SQL that allows for the identification of places with high rates of flood vulnerability with building materials taken into account.
 
 ### Question
 
@@ -218,7 +219,7 @@ To aggregate into wards, we first join the "danger" field to the wards layer. Ho
 
 ```sql
 
-SELECT addgeometrycolumn('wilmer','wards','wardgeom',32737,'MULTIPOLYGON',2);
+SELECT addgeometrycolumn('youruser','wards','wardgeom',32737,'MULTIPOLYGON',2);
 
 UPDATE wards
 SET wardgeom =  ST_Transform(geom, 32737);
@@ -360,7 +361,7 @@ SET pop_density = totalpop / area_km2;
   This analysis attempted to determine the vulnerability of individual homes and wards to flooding based on two factors: the building materials and the proximity to different flood zones of different flood scenarios. Homes deemed at high risk were built out of non-sturdy materials and were within a flood area of a 25-50 cm scenario. On the other hand, homes deemed at no risk were build with more conventional materials and were not on a flood zone.
   As shown in the interactive map, very few homes were classified by this methodology as high risk - 42 out of 1312210 homes analyzed to be exact. Likewise, none were deemed at very high risk. As expected, homes at medium and high risk concentrated in wards that are along the flood areas and that have high population densities (Figure 2.).
 
-  Since the flood areas do seem to cover a considerable amount of homes from observation, it is very likely that these low numbers are an artifact of the data and methodology. Primarily, the data for building materials was not consistent with throughout the whole dataset; in fact, less than 5% of the buildings had a value other than null for this attribute. Moreover, the OSM building layer did not classify residential buildings consistently either, which lead us to assume that all buildings with an attribute of "yes" were residential.
+  Since the flood areas do seem to cover a considerable amount of homes from observation, it is very likely that these low numbers are an artifact of the data and methodology. Primarily, the data for building materials was not consistent throughout the whole dataset; in fact, less than 5% of the buildings had a value other than null for this attribute. Moreover, the OSM building layer did not classify residential buildings consistently either, which lead us to assume that all buildings with an attribute of "yes" were residential.
 
   In general, this analysis could be more useful and effective using other attributes as indicators for vulnerability that may be more consistently reported. Nonetheless, these rough maps do provide a sense of the areas where people may be more vulnerable to floods. Moreover, given that this analysis can be done to the household level, it could be a powerful way for local authorities, first responders, aid agencies to keep a data base of the physical buildings that may be more propense to damage in different flooding scenarios.  
 
@@ -381,6 +382,7 @@ SET pop_density = totalpop / area_km2;
     - DATA:
       - [Dar es Salaam Administrative Wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards)
       - Dar Es Salaam Flood Scenarion 25-200cm
+      - **use in analysis**: this information was used to score homes that intersected with the different flood scenarios with their respective risk score, and the administrative wards were used to aggregate the results and map our findings.
 
 ### Acknowlegments
 

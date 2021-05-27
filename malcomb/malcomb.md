@@ -36,7 +36,6 @@ Outline the data used in the study, including:
 - the variable(s) used from each data source
 - transformations applied to the variables (e.g. rescaling variables, calculating derived variables, aggregating to different geographic units, etc.)
 
-This part may be compiled collaboratively as a group!
 #### Overview
 Malcomb et al. (2014) calculated household resilience seen in scores using three different data sources (refer to Fig. 2 of Malcomb et al. 2014)
 - The variables to calculate Adaptive Capacity were obtained from the USAID's Demographic and Health Surveys (DHS).
@@ -48,8 +47,9 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
 
 ##### USAID's Demographic and Health Surveys
   [Demographic and Health Surveys (DHS)](https://dhsprogram.com/Methodology/Survey-Types/DHS.cfm) are nationally-representative household surveys that provide data for a wide range of monitoring and impact evaluation indicators in the areas of population, health, and nutrition (from DHS website). These surveys record assets and access to resources at the household level. The following list outlines the specific variables that were taken into account in this part of the replication. Specifically, DHS data was only used to obtain assets and access data to calculate Adaptive Capacity (40% of the Household Resilience Score). DHS data requires use authorization by the DHS and therefore cannot be shared in this report or through the data repository. You can get authorization to obtain the data on this [here](https://dhsprogram.com/)
-
+<br>
   For **ASSETS**
+  <br>
 
   |  **Name listed by Malcomb et al. (2014)**  |      **Variable (from DHS 2010) used in replication**    | **Possible values**                          |
   |:--------------------------------------:|:----------------------------------------------------:|------------------------------------------|
@@ -69,7 +69,9 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   | # of Orphans in Household (3%)         | Number of orphans and vulnerable children            | n                                        |
 
 
+<br>
   For **ACCESS**
+  <br>
 
 
   | **Name listed by Malcomb et al. (2014)** | **Variable (from DHS 2010) used in replication** | **Possible values**                                                                                                                                                           |
@@ -82,9 +84,11 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
   |           Own a radio (3%)           | Has Radio                                    | Yes/NO                                                                                                                                                                    |
   |   House setting (urban/rural) (2%)   | type of place of residence                   | Urban, Rural                                                                                                                                                              |
 
+<br>
 ##### USAID's Famine Early Warning Network (FEWSNET)
 [FEWSNET](https://fews.net/about-us), the Famine Early Warning Systems Network, is a leading provider of early warning and analysis on acute food insecurity around the world (from FEWSNET website). One of the goals of the FEWSNET is to predict future cases of acute food insecurity in order to inform humanitarian response. Therefore, the data they collect is tailored towards measuring the vulnerability of communities mainly focused on land use practices, food sourcing, and coping strategies of the communities surveyed. Malcomb et al. (2014) used variables from the FEWSNET 2005 survey in Malawi to calculate the 20% Livelihood Sensitivity portion of the Household Resilience scores. However, they were not clear on which variables exactly they used, so we had to use our judgement to make the our best informed guesses. The following table shows the attributes and calculations that we carried out in contrast to what was listed in the paper.
 
+<br>
 
 |             **Name listed by Malcomb et al. (2014)**                                             |                                     **Variable (from FEWSNET 2005) used in
  replication**                                    |   **Possible values** |
@@ -94,9 +98,11 @@ Malcomb et al. (2014) calculated household resilience seen in scores using three
 |           Income From Cash Crops (4%)  (% labor that is susceptible to market shocks (tobacco, sugar, tea, coffee))          | Sources of cash: crops / total income  (Included income from **all** crops due to vague definition of _cash crops_) | x%              |
 | Disaster Coping Strategy (4%)  (potential sources of additional food and income **that lead  to environmental degradation**) |                           Income from sales of firewood, grass, wild foods / total income                           | x%              |
 
+
+<br>
 ##### United Nations Environment Programme (UNEP)/ Global Resource Information Database (GRID) Data:
 
-The GRID-Geneva database comes from a partnership between the UNEP, the Swiss Federal Office for the Environment and the University of Geneva. Their focus is on processing, analysis and creating models from satellite data using remote sensing techniques and GIS with the goal of providing scientific information to decision makers.(Learn more [here](https://unepgrid.ch/en/about-us/grid]))
+The GRID-Geneva database comes from a partnership between the UNEP, the Swiss Federal Office for the Environment and the University of Geneva. Their focus is on processing, analysis and creating models from satellite data using remote sensing techniques and GIS with the goal of providing scientific information to decision makers.(Learn more [here](https://unepgrid.ch/en/about-us/grid))
 The Global Risk Data Platforms is the product of a multiagency effort to share spatial information on global risk from natural hazards. (Learn more [here](https://preview.grid.unep.ch/))
 
 - Following the procedure from Malcomb et al. (2014), we obtained the Estimated Risk for Flood Hazard and Exposition to Drought Events layers from this data source.
@@ -206,18 +212,18 @@ Regarding the reproduction of the adaptive capacity map, there was a high Spearm
 
 Regarding the vulnerability map reproduction, we were not as successful in reproducing Malcomb et al's results. With a rho coefficient of 0.2686568, there was little agreement between the original study and the reproduction. As seen in figure 5. our reproduction largely underestimated vulnerability except for a few areas on the coast, which were overestimated. The disagreement between the original study and our results could be attributed to the lack of clarity in the description of the methods. We only had the limited narrrative of the methods in the paper and no code or detailed workflow to follow.
 
-In general terms, sources of uncertainty for this replication study were present at two different levels. Firstly, regarding the original study, there was epistemic uncertainty introduced by the creation of the vulnerability index due to subjective input used to make decision in the model. As Tate(2013) states, this type of uncertainty is the result of utilizing expert opinion and community surveys in the selection of parameters and weighting of the resilience index calculated in the original study. Malcomb et al (2014) conducted interviews to identify metathemes to frame their surveys and include variables to resilience index that were meaningful in understanding vulnerability in the Malawian context. However, the kinds of questions Malcomb et al. (2014) asked in these interviews may have also skewed the topics talked about in the interviews and therefore affect the metathemes identfied through those surveys. Moreover, uncertainty is introduced through Longley et al's (2008) conceptualization of uncertainty. In this model, there is more distortion of the way the real world is conceived as data is transported and translated in different units of analysis. In this case, the transformatio of the data into normalized indices and aggregation to different geographic scales may have also introduced uncertainty.
+In general terms, sources of uncertainty for this replication study were present at two different levels. Firstly, regarding the original study, there was epistemic uncertainty introduced by the creation of the vulnerability index due to subjective input used to make decision in the model. As Tate(2013) states, this type of uncertainty is the result of utilizing expert opinion and community surveys in the selection of parameters and weighting of the resilience index calculated in the original study. Malcomb et al (2014) conducted interviews to identify metathemes to frame their surveys and include variables to resilience index that were meaningful in understanding vulnerability in the Malawian context. However, the kinds of questions Malcomb et al. (2014) asked in these interviews may have also skewed the topics talked about in the interviews and therefore affect the metathemes identfied through those surveys. Moreover, uncertainty can be explained through Longley et al's (2008) conceptualization of uncertainty. In this model, there is more distortion of the way the real world is conceived as data is transported and translated in different units of analysis. In this case, the transformatio of the data into normalized indices and aggregation to different geographic scales may have also introduced uncertainty.
 
-Finally, there was no further verification of the resilience model by Malcomb et al. (2014). Therefore, there was no clear way to know if the areas that the study deemed as more resilient or not actually were. It is important to mention that proving the veracity of these kinds of models is difficult to do pre-disaster. In other words, one of the ways to know the accuracy of a vulnerability model would be to compare its predictions to the impacts of an actual incident in the place. Clearly, if this were the case a lot of the value in coming up with vulnerability models would be undermined. The whole purpose of this kind of studies is to identify areas where disaster prevention and preparation efforts should go to. As Tate (2013) explain, a Monte Carlo simulation may be appropriate to analyse epistemic uncertainty in the model. This simulation iterates the vulnearbility model changing its configuration each time. The results allow us to understand how the deliberate decision of the authors influenced the results of the model.  
+Finally, there was no further verification of the resilience model by Malcomb et al. (2014). Therefore, there was no clear way to know if the areas that the study deemed as more resilient or not actually were. It is important to mention that proving the veracity of these kinds of models is difficult to do pre-disaster. In other words, one of the ways to know the accuracy of a vulnerability model would be to compare its predictions to the impacts of an actual incident in the place. Clearly, if this were the case a lot of the value in coming up with vulnerability models would be undermined. The whole purpose of this kind of studies is to identify areas where disaster prevention and preparation efforts should go to. As Tate (2013) explain, a Monte Carlo simulation may be appropriate to analyze epistemic uncertainty in the model. This simulation iterates the vulnerability model changing its configuration each time. The results allow us to understand how the deliberate decision of the authors influenced the results of the model. Given that this study was made completely in R, the Monte Carlo simulation is very feasible!
 
 ## Conclusion
 
-This reproduction study was an example of how difficult it is to replicate geospatial research with current standards of publication and the shortcomings of vulnerability modeling. There are two main sources of uncertainty that play into the difficulty to replicate the study. Firstly, the epistemic uncertainty introduced by the deliberate descions of the authors that may not be very well communicated through their writign. Secondly, the lack of a clear objective methodology to follow (ie. workflow, code script, etc...) made it difficult to have certainty about the descicions we made about nomarlizing (0-5 or 1-5 scale), or choosing attributes for livelihood sensitivity. Finally, the results of this reproduction are another example of the need for higher standards of publication regarding the documentation of methods and availability of data and software to ensure that scrutiny, replicability and reproducibility of the study is possible and accurate.
+This reproduction study was an example of how difficult it is to replicate geospatial research with current standards of publication and the shortcomings of vulnerability modeling. There are two main sources of uncertainty that play into the difficulty to replicate the study. Firstly, the epistemic uncertainty introduced by the deliberate decisions of the authors that may not be very well communicated through their writing. Secondly, the lack of a clear objective methodology to follow (i.e. workflow, code script, etc...) made it difficult to have certainty about the decisions we made about normalizing (0-5 or 1-5 scale), or choosing attributes for livelihood sensitivity. Finally, the results of this reproduction are another example of the need for higher standards of publication regarding the documentation of methods and availability of data and software to ensure that scrutiny, replicability and reproducibility of the study is possible and accurate.
 
 
 ## Acknowledments
 
-Thanks to Prof. Joseph for organizing this lab and preparing the materials. To Kufre Udoh for developing the reproduction script in R, helping me resolve problems with the code, and aswering questions. Likewise, credit to my lab group: Arielle Landau for guiding us in understanding the code, Maddie Tango and her issues submissions for helping me troubleshoot, and to Evan Killion, Jackson Mumper and Sanjana Roy, Maddie and Arielle for working together to understand the Malcomb et al. (2014) paper, creating workflows and compiling data for our reproduction.
+Thanks to Prof. Joseph for organizing this lab and preparing the materials. To Kufre Udoh for developing the reproduction script in R, helping me resolve problems with the code, and answering questions. Likewise, credit to my lab group: Arielle Landau for guiding us in understanding the code, Maddie Tango and her issues submissions for helping me troubleshoot, and to Evan Killion, Jackson Mumper and Sanjana Roy, Maddie and Arielle for working together to understand the Malcomb et al. (2014) paper, creating workflows and compiling data for our reproduction.
 
 ## References
 
