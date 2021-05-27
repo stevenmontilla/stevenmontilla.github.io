@@ -112,11 +112,21 @@ def network_setting(network):
 ## Results and Discussion
 
 ![kang result](img/ChicagoResult.png)
+Figure 1. Hospital accessibility in Chicago by Kang et al. 2020.
+<br>
 
-
+Hospital accessibility in Chicago seems to be higher in the center of the city and gradually decrease as you go away from the center, especially towards the south. The results map produced by their script would be more easily understood if there was a label for the gradient.
+<br>
 ![reproduction result](img/modified_script_result.png)
+Figure 2. Reproduction of Kang et al's hospital accessibility in Chicago with extended road network.
+<br>
+
+By increasing the road network, there was a shift north and west of the areas with higher accessibility. Morever, the northwest peninsula-like portion of the city had drastically higher rates of accessibility than in Figure 1.
 
 ![improved figure](img/chicahgohospitals_improved_25_classes.png)
+Figure 3. Visualization suggestions for Kang et al. (2020) hospital accessibility maps.
+
+Finally, to address 
 
 
 - need to include preprocessing of hospital data to match what they wrote in the paper.
