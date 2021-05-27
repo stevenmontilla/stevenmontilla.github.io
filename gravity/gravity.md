@@ -12,6 +12,7 @@ features (α), friction of distance (β) and emissivity of input features (λ). 
   the same layer format as the input features/layer.
 
 ![Gravity Model](assets/GravityModelofSpatialInteraction.png)
+<br>
 Download model [here](models/GravityModel.model3)
 
 ### Model 2: Preprocessing of target feature layer for Gravity Model.
@@ -21,6 +22,7 @@ All target features found within the same input feature are aggregated and summa
 The output is a target layer is a filtered version of the target features that conserves all attribute fields.
 
 ![Target Features Preprocessing](assets/Preprocessing of Target Features for Gravity Model.png)
+<br>
 Download model [here](models/TargetFt.model3)
 
 ### Model 3 Preprocessing Model of Homeland Security Hospital data:
@@ -28,6 +30,7 @@ The only purpose of this model is to prepare Homeland Security Hospital Data to 
 features with the following expression: "TYPE" != 'MILITARY' AND "TYPE" != 'PSYCHIATRIC' AND "BEDS" > 0 AND "STATUS" = 'OPEN'.
  This model is specifically design for the Homeland Security Hospital data
 ![Target Features Preprocessing](assets/Preprocessing Homeland Security Hospital Data.png)
+<br>
 Download model [here](models/Homeland.model3)
 
 #### Clarifications
