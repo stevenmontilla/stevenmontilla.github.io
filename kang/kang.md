@@ -34,7 +34,7 @@ One factor that this methodology does not take into account is the gravity of th
 
 ## Modifications to Kang et al. (2020)
 
-Our class identified possible sources of error in the analysis related to edge effects. The model takes into account hospitals outside of Chicago for analysis. However, the road network used did not reach these hospitals. In order to calculate driving times from the hospitals, they hospital points needed to be reassigned to the closest valid node in the road network. Thus, hospitals outside of Chicago were assigned to nodes at the edges of the city, likely inflating the estimates of accessibility at the edges of the city. To address this problem, our class determined that the best way to go about it would be to increase the size of the road network. 
+Our class identified possible sources of error in the analysis related to edge effects. The model takes into account hospitals outside of Chicago for analysis. However, the road network used did not reach these hospitals. In order to calculate driving times from the hospitals, they hospital points needed to be reassigned to the closest valid node in the road network. Thus, hospitals outside of Chicago were assigned to nodes at the edges of the city, likely inflating the estimates of accessibility at the edges of the city. To address this problem, our class determined that the best way to go about it would be to increase the size of the road network.
 
 Increasing the road network generated some unexpected errors that Maja Cannavo was able to solve by modifying the original script from:
 
@@ -69,6 +69,7 @@ def network_setting(network):
     return(network)
 ```
 to
+<br>
 **note the addition of the TRY and EXCEPT clauses**
 ```python
 def network_setting(network):
